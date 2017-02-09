@@ -1,0 +1,309 @@
+/* S E T U P */
+
+// BREAKPOINTS //
+$wide_b: 1920px
+$large_b: 1440px
+$laptop_b: 1280px
+//$random: 1028px
+$tablet_b: 800px
+$phone_b: 600px
+
+
+// COLORS
+$c-white: #FFFFFF
+$c-black: #000000
+$c-gray: #4D4D4F
+$c-dark-gray: #1F1F20
+$c-med-gray: #5B5B5C
+$c-light-gray: #A1A1A1
+$c-lighter-gray: #D8D8D8
+$c-red-red-wine: #BC345B
+$c-facebook-blue: #1E2BFF
+$c-twitter-blue: #1E8BFF
+$c-red: #D00202
+$c-blue: #1E68FF
+$c-aqua: #03919E
+
+
+// FONTS //
+@font-face
+	font-family: 'lyonR'
+	src: url('../fonts/LyonText-Regular.otf'), url('../fonts/Omnes-Regular.eot') format('embedded-opentype'), url('../fonts/Omnes-Regular.woff') format('woff'), url('../fonts/Omnes-Regular.ttf') format('truetype'), url('../fonts/Omnes-Regular.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'proximaB'
+	src: url('../fonts/ProximaNova-Bold.otf'), url('../fonts/Omnes-Semibold.eot') format('embedded-opentype'), url('../fonts/Omnes-Semibold.woff') format('woff'), url('../fonts/Omnes-Semibold.ttf') format('truetype'), url('../fonts/Omnes-Semibold.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'proximaL'
+	src: url('../fonts/ProximaNova-Light.otf'), url('../fonts/Omnes-Semibold.eot') format('embedded-opentype'), url('../fonts/Omnes-Semibold.woff') format('woff'), url('../fonts/Omnes-Semibold.ttf') format('truetype'), url('../fonts/Omnes-Semibold.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'proximaR'
+	src: url('../fonts/ProximaNova-Regular.otf'), url('../fonts/Omnes-Semibold.eot') format('embedded-opentype'), url('../fonts/Omnes-Semibold.woff') format('woff'), url('../fonts/Omnes-Semibold.ttf') format('truetype'), url('../fonts/Omnes-Semibold.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+.t-lyon
+	font-family: 'lyonR'
+
+.t-proxima
+	font-family: 'proximaR'
+	strong, b
+		font-family: 'proximaB'
+
+// FLOATS
+.c-center
+	margin: 0 auto
+	display: block
+
+.t-center
+	text-align: center
+
+.block
+	display: block
+
+.t-right
+	text-align: right
+
+.f-right
+	float: right
+
+.hidden
+	overflow: hidden
+
+.table-cell
+	display: table-cell
+	vertical-align: middle
+
+// GOBLAL TEXT RULES
+body
+	background: $c-dark-gray
+	color: $c-black
+	font-family: 'proximaR'
+	font-size: 16px
+	line-height: normal
+	@media (max-width: $tablet_b)
+		font-size: 14px
+// 64px
+=huge-txt
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 4em
+.huge-txt
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 4em
+
+.smaller-txt
+	font-size: 0.875em
+
+// 48px
+h1
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 3em
+// 32px
+h2
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 2em
+// 24px
+h3
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 1.5em
+// 18px
+h4
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 1.125
+
+
+// COMBOS
+=bg-img
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+
+=line-clamp-x3
+	display: -webkit-box
+	-webkit-line-clamp: 3
+	-webkit-box-orient: vertical
+	overflow: hidden
+
+=horizontal-center
+	position: absolute
+	left: 0
+	margin: 0 auto
+	right: 0
+
+
+// CIRCLES
+.profile-thumb
+	+bg-img
+	+border-radius(4.2em)
+	display: inline-block
+	height: 2.5em
+	vertical-align: top
+	width: 2.5em
+	@media (min-width: $tablet_b)
+		height: 4.2em
+		width: 4.2em
+
+.vote-up, .vote-down, .social-btn
+	font-size: 16px
+	font-family: 'proximaB'
+	background: $c-lighter-gray
+	height: 3.375em
+	width: 3.375em
+	display: inline-block
+	+transition(all ease 0.3s)
+	+border-radius(4em)
+
+.vote-up, .vote-down, .social-btn
+	&:hover
+		+transition(all ease 0.3s)
+		+filter(brightness(120%))
+
+.vote-up
+	color: $c-blue
+	margin-bottom: 0.75em
+	&:before
+		+appearance(none)
+		content: url('../img/arrow-up.svg')
+		display: block
+
+.vote-down
+	color: $c-red
+	&:before
+		+appearance(none)
+		content: url('../img/arrow-down.svg')
+		display: block
+
+.event-type-cir
+	border-radius: 2.25em
+	height: 2.5em
+	width: 2.5em
+	color: $c-white
+	line-height: 2.6em
+	font-size: 0.875em
+	text-align: center
+
+
+// BUTTONS
+.stroke-btn
+	min-width: 14.5em
+	border: 1px solid $c-black
+	font-family: 'proximaR'
+	padding: 1em 1.5em
+	font-size: 1.125em
+
+.close-btn
+	display: block
+	cursor: pointer
+	position: absolute
+	right: 20px
+	top: 30px
+	z-index: 2
+	> div
+		width: 30px	
+		height: 1px
+		background: $c-white
+		width: 100%
+		margin-bottom: 6px
+	> div:nth-child(1)
+		+transform(rotate(45deg))
+	> div:nth-child(2)
+		+transform(rotate(-45deg))
+		position: relative
+		top: -7px
+
+// SHORTHANDS
+.video-wrap
+	position: relative
+	padding-bottom: 56.25%
+	padding-top: 0
+	height: 0
+	max-width: 1140px
+	margin: 0 auto
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+.share-block
+	+border-radius(0.5em)
+	border: $c-gray 1px solid
+	overflow: hidden
+	padding: 0.5em
+	position: relative
+	width: 100%
+	&:before
+		color: $c-gray
+		content: 'Share'
+		position: absolute
+		text-align: left
+		top: 1.5em
+	button
+		float: right
+		margin-right: 1em
+
+.pager
+	ul
+		text-align: center
+	li
+		display: inline-block
+		margin-right: 0.5em
+	a
+		+border-radius(3em)
+		display: block
+		background: $c-black
+		color: $c-white
+		line-height: 2.5em
+		font-family: 'proximaB'
+		height: 2.635em
+		width: 2.635em
+	a:hover, .current
+		background: $c-white
+		color: $c-black
+
+
+// COLORS
+.c-black
+	color: $c-black
+
+.c-white
+	color: $c-white
+
+.c-fb
+	color: $c-facebook-blue
+
+.c-tw
+	color: $c-twitter-blue
+
+.bg-white
+	background: $c-white
+
+.c-light-gray
+	color: $c-light-gray
+
+.c-gray
+	color: $c-gray
+
+.c-aqua
+	color: $c-aqua
+
+.bg-aqua
+	background: $c-aqua
+
+.bg-grape
+	background: $c-red-red-wine
