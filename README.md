@@ -16,6 +16,9 @@ Tests | :rotating_light: `:rotating_light:`
 ## Maquetas:
 
 Home Philios: http://testbed.raidho.mx/fronesis/
+
 Single view: http://testbed.raidho.mx/fronesis/single-view.html
+
 Dashboard (home): http://testbed.raidho.mx/fronesis/booking.html
+
 Cards (book a meeting): http://testbed.raidho.mx/fronesis/modals/client.html
