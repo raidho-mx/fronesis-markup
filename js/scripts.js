@@ -1,31 +1,32 @@
-$(document).ready(function() {
-	$(".tabs-menu a").click(function(event) {
-		event.preventDefault();
-		$(this).parent().addClass("current");
-		$(this).parent().siblings().removeClass("current");
-		var tab = $(this).attr("href");
-		$(".tab-content").not(tab).css("display", "none");
-		$(tab).fadeIn();
-	});
+// HOME TABS
+$(".tabs-menu a").click(function(event) {
+	event.preventDefault();
+	$(this).parent().addClass("current");
+	$(this).parent().siblings().removeClass("current");
+	var tab = $(this).attr("href");
+	$(".tab-content").not(tab).css("display", "none");
+	$(tab).fadeIn();
 });
 
-$(document).ready(function() {
-	$(".nav a.triggerNav").click(function(event) {
-		event.preventDefault();
-		$(this).parent().toggleClass("current");
-		$(this).parent().siblings().removeClass("current");
-		var tab = $(this).attr("href");
-		$(".booking-nav-hidden").not(tab).toggleClass("display");
-		$(tab).toggleClass("display");
-	});
+
+// BOOKING: SECONDARY NAVIGATION
+$(".nav a.triggerNav").click(function(event) {
+	event.preventDefault();
+	$(this).parent().toggleClass("current");
+	$(this).parent().siblings().removeClass("current");
+	var tab = $(this).attr("href");
+	$(".booking-nav-hidden").not(tab).toggleClass("display");
+	$(tab).toggleClass("display");
 });
 
+
+// MAIN NAVIGATION
 $('#triggerStMenu, #closeBtn').click(function(){
 	$('.st-menu.hidden-menu').toggleClass('show');
 });
 
 
-
+// SLIDER ONE COLUMN
 $('.one-col-slider').slick({
 	slidesToShow: 1,
 	slide: '.slider-item',
@@ -36,6 +37,7 @@ $('.one-col-slider').slick({
 });
 
 
+// SLIDER SIX COLUMNS
 $('.six-col-slider').slick({
 	slidesToShow: 6,
 	infinite: true,
@@ -74,8 +76,21 @@ $('.six-col-slider').slick({
 });
 
 
+// BOOKING: ADJUST NAVIGATION WIDTH
 var widthLi = $(".booking-nav .nav li").outerWidth();
 var sizeLi = $(".booking-nav .nav li").length;
 var totalWidthLi = widthLi * sizeLi + 100;
-
 $(".booking-nav .nav ul").css({"width" : totalWidthLi });
+
+
+// // MODALS: TRIGGER SUGGESTION LIST AT SEARCH BUTTON
+// $( ".search input" ).focus(function() {
+// 	$('.suggestion-list').addClass('show');
+// }).blur(function() {
+// 	$('.suggestion-list').removeClass('show');
+// });
+
+// POP CALENDAR
+$( ".datepicker" ).datepicker({
+	dateFormat: 'd MM yy'
+});
