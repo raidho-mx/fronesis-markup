@@ -53,7 +53,7 @@ button, select, input[type="submit"] {
 	cursor: pointer;
 }
 
-*:focus, button, input, select {
+*:focus, button, input, select, textarea {
 	outline:0;
 	-moz-appearance: none;
 	-webkit-appearance: none;

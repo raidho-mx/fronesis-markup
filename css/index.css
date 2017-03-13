@@ -1226,6 +1226,37 @@ footer {
       .philios-post .rating {
         margin-top: 3em; } }
 
+.add-comment {
+  display: inline-block;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+  padding: 1.25em 0;
+  width: 100%; }
+  @media (min-width: 800px) {
+    .add-comment {
+      padding: 1.25em; } }
+  .add-comment textarea {
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+    display: block;
+    color: #FFFFFF;
+    font-family: "proximaR";
+    padding: 1.5em;
+    font-size: 1em;
+    background: #000000;
+    margin-bottom: 2em;
+    max-width: 46em;
+    width: 100%; }
+    .add-comment textarea::-webkit-input-placeholder {
+      color: #FFFFFF; }
+    .add-comment textarea::-moz-placeholder {
+      color: #FFFFFF; }
+    .add-comment textarea:-ms-input-placeholder {
+      color: #FFFFFF; }
+    .add-comment textarea:-moz-placeholder {
+      color: #FFFFFF; }
+
 .list-comments .post {
   padding-bottom: 1.25em;
   display: inline-block;
