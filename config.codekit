@@ -124,6 +124,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/doggo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21180,
+		"inputAbbreviatedPath": "\/img\/doggo.png",
+		"outputAbbreviatedPath": "\/img\/doggo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/f-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,

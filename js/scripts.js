@@ -94,3 +94,17 @@ $(".booking-nav .nav ul").css({"width" : totalWidthLi });
 $( ".datepicker" ).datepicker({
 	dateFormat: 'd MM yy'
 });
+
+
+// INDEX: POP ADD URL BOX
+$(".create-post .add").click(function(){
+	$(".create-post.add-url").addClass("show");
+});
+
+$('.create-post.add-url').keypress(function(e) {
+	var key = e.which;
+	if (key === 13) {
+		$('.create-post.url-added').toggleClass('show');
+		$('.create-post.add-url').toggleClass('show');
+	}
+});
