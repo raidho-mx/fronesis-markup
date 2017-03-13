@@ -894,6 +894,28 @@ footer {
       margin-bottom: 1em; }
     .create-post.url-added .post-content input[type="text"].title {
       font-size: 1.5em; }
+    .create-post.url-added .post-content .close-tag {
+      color: #FFFFFF;
+      margin-right: 0.5em; }
+    .create-post.url-added .post-content span.tag {
+      font-family: "proximaB"; }
+    .create-post.url-added .post-content .tagsinput {
+      height: auto; }
+    .create-post.url-added .post-content .tagsinput > div {
+      display: inline-block; }
+    .create-post.url-added .post-content .add-tag {
+      color: #FFFFFF;
+      font-size: 1em;
+      font-family: "proximaB";
+      width: 100%; }
+      .create-post.url-added .post-content .add-tag::-webkit-input-placeholder {
+        color: #FFFFFF; }
+      .create-post.url-added .post-content .add-tag::-moz-placeholder {
+        color: #FFFFFF; }
+      .create-post.url-added .post-content .add-tag:-ms-input-placeholder {
+        color: #FFFFFF; }
+      .create-post.url-added .post-content .add-tag:-moz-placeholder {
+        color: #FFFFFF; }
     .create-post.url-added .post-content .tags {
       margin-top: 1em; }
     .create-post.url-added .post-content .tags li {

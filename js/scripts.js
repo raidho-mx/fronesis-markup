@@ -108,3 +108,8 @@ $('.create-post.add-url').keypress(function(e) {
 		$('.create-post.add-url').toggleClass('show');
 	}
 });
+
+// TAGS
+$(function() {
+	$('.tags_1').tagsInput({width:'auto'});
+});
