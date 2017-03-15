@@ -96,18 +96,44 @@ $( ".datepicker" ).datepicker({
 });
 
 
-// INDEX: POP ADD URL BOX
-$(".create-post .add").click(function(){
-	$(".create-post.add-url").addClass("show");
+// INDEX UPLOAD PHOTO: POP ADD URL BOX
+$(".upload-photo").click(function(){
+	$(".create-post.upload-file").addClass("show");
+	$(".create-post.add-url.video-url").removeClass("show");
+	$('.create-post.url-added').removeClass('show');
+	$(this).siblings().css({'opacity' : '0.2'});
+	$(this).css({'opacity' : '1'});
+});
+
+$(".upload-video").click(function(){
+	$(".create-post.add-url.video-url").addClass("show");
+	$(".create-post.upload-file").removeClass("show");
+	$('.create-post.url-added').removeClass('show');
+	$(this).siblings().css({'opacity' : '0.2'});
+	$(this).css({'opacity' : '1'});
+});
+
+// INDEX UPLOAD PHOTO: CLICK BUTTON LINK/ UPLOAD
+$(".upload-file .file-button").click(function(){
+	$(".create-post.add-url.photo-url").addClass("show");
+	$(this).parent().removeClass("show");
 });
 
 $('.create-post.add-url').keypress(function(e) {
 	var key = e.which;
 	if (key === 13) {
-		$('.create-post.url-added').toggleClass('show');
-		$('.create-post.add-url').toggleClass('show');
+		$('.create-post.url-added').addClass('show');
+		$(this).removeClass("show");
 	}
 });
+
+// CLOSE CREATE POST WINDOW MESSAGE
+$(".deny-post, .allow-post").click(function(){
+	$('.create-post.url-added').removeClass('show');
+	$('.create-post.choose-format').addClass('hide');
+	$('.create-post.alert-message').addClass('show');
+});
+
 
 // TAGS
 $(function() {

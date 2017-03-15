@@ -275,17 +275,23 @@ h4 {
   background: #4A4A4A;
   color: #FFFFFF;
   font-family: "proximaR";
-  padding: 1em 3em;
+  padding: 1em 2em;
   font-size: 1.125em;
   max-width: 9em; }
+  @media (min-width: 800px) {
+    .btn-gray-dark {
+      padding: 1em 3em; } }
 
 .btn-aqua {
   background: #03919E;
   color: #FFFFFF;
   font-family: "proximaR";
-  padding: 1em 3em;
+  padding: 1em 2em;
   font-size: 1.125em;
   max-width: 9em; }
+  @media (min-width: 800px) {
+    .btn-aqua {
+      padding: 1em 3em; } }
 
 .btn-gray {
   background: #FFFFFF;
@@ -822,11 +828,73 @@ footer {
     text-align: center; }
   .create-post button.add p {
     margin-top: 0.5em; }
-  .create-post .f-right {
-    float: inherit; }
+  .create-post button.add img {
+    height: 1.5em;
+    max-width: 1.5em; }
+  .create-post .file-button {
+    padding: 0.4em;
+    width: 100%; }
+    .create-post .file-button button {
+      color: #FFFFFF;
+      background: #3A3A3A;
+      padding: 2em 4em;
+      font-family: "proximaB";
+      font-size: 1em;
+      height: 5.5em;
+      text-align: center;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      width: 100%; }
+    .create-post .file-button button:hover {
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      background: #5D5D5D; }
+    .create-post .file-button button img {
+      vertical-align: bottom;
+      margin-right: 0.5em; }
+  @media (min-width: 600px) {
+    .create-post button.add img {
+      height: 2em;
+      max-width: 2em; } }
   @media (min-width: 800px) {
     .create-post .f-right {
-      float: right; } }
+      float: right; }
+    .create-post .file-button {
+      padding: 0.4em;
+      width: 49.2%; }
+      .create-post .file-button button {
+        width: 102.4%; } }
+
+.create-post.alert-message {
+  border: 1px solid #959595 !important;
+  display: none; }
+  .create-post.alert-message .profile-rtxt {
+    width: 60%; }
+  @media (max-width: 600px) {
+    .create-post.alert-message .profile-rtxt {
+      margin-top: 0; } }
+
+.create-post.choose-format.hide {
+  display: none; }
+
+.create-post.choose-format {
+  position: relative;
+  height: 6em; }
+  .create-post.choose-format .two-col {
+    width: 49%;
+    position: absolute; }
+  .create-post.choose-format .two-col:nth-child(2) {
+    right: 1em; }
+  @media (min-width: 800px) {
+    .create-post.choose-format {
+      height: 6.8em; } }
+
+.create-post.upload-file {
+  display: none; }
 
 .create-post.add-url {
   display: none;
@@ -936,7 +1004,9 @@ footer {
       padding-right: 0; } }
 
 .create-post.add-url.show,
-.create-post.url-added.show {
+.create-post.url-added.show,
+.create-post.upload-file.show,
+.create-post.alert-message.show {
   display: block; }
 
 .create-post:nth-child(3) {

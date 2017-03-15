@@ -55,6 +55,7 @@ button, select, input[type="submit"] {
 
 *:focus, button, input, select, textarea {
 	outline:0;
+	border-radius: 0;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	border: none;

@@ -60,21 +60,53 @@
 			<!-- <li><a href="#tab-5">Near<span class="smaller-txt">BETA</span></a></li> -->
 		</ul>
 
-		<div class="create-post p20">
+		<!-- CHOOSE FORMAT  -->
+		<div class="create-post choose-format p20">
 			<div class="two-col columns">
 				<div class="profile-thumb" style="background-image: url('img/blog1.png');"></div>
 				<h3 class="profile-rtxt">Post:</h3>
 			</div>
 			<div class="two-col">
-				<button class="add f-right" type="button" name="button">
+				<button class="add f-right upload-video">
+					<img src="img/icon-video.svg" alt="Upload Image">
+					<p>Video</p>
+				</button>
+				<button class="add f-right columns upload-photo">
 					<img src="img/icon-photo.svg" alt="Upload Image">
 					<p>Photo</p>
 				</button>
 			</div>
 		</div>
-		<div class="create-post add-url">
+
+		<!-- SUCCESS MESSAGE -->
+		<div class="create-post alert-message p20">
+			<div class="one-col columns">
+				<div class="profile-thumb" style="background-image: url('img/blog1.png');"></div>
+				<h3 class="profile-rtxt">Posted your video succesfully!</h3>
+			</div>
+		</div>
+
+		<!-- UPLOAD FILE -->
+		<div class="create-post upload-file">
+			<div class="two-col file-button">
+				<button><img src="img/icon-link.svg" alt="">Add photo from link / URL</button>
+			</div>
+			<div class="two-col file-button">
+				<button><img src="img/icon-import.svg" alt="">Upload a JPG, PNG or GIF</button>
+			</div>
+		</div>
+
+		<!-- IMAGE: PASTE URL -->
+		<div class="create-post add-url photo-url">
 			<input type="text" name="" placeholder="Paste a URL">
 		</div>
+
+		<!-- VIDEO: PASTE URL -->
+		<div class="create-post add-url video-url">
+			<input type="text" name="" placeholder="Paste a URL from Vimeo or YouTube">
+		</div>
+
+		<!-- FILL ALL FIELDS -->
 		<div class="create-post url-added">
 			<div class="three-col">
 				<input type="text" placeholder="https://img.ifcdn.com/images/6a183108033eef9a83dca019d1a1e5...">
@@ -90,12 +122,12 @@
 					<li>#workout</li>
 				</ul>
 			</div>
-			<div class="one-colm p20">
+			<div class="one-col p20">
 				<div class="two-col columns">
-					<button class="btn-gray-dark">Close</button>
+					<button class="btn-gray-dark deny-post">Close</button>
 				</div>
 				<div class="two-col f-right">
-					<button class="btn-aqua f-right">Post</button>
+					<button class="btn-aqua f-right allow-post">Post</button>
 				</div>
 			</div>
 		</div>
