@@ -216,8 +216,7 @@ h4 {
 
 .profile-rtxt {
   margin-left: 0.5em;
-  display: inline-block;
-  margin-top: 0.5em; }
+  display: inline-block; }
   @media (min-width: 800px) {
     .profile-rtxt {
       margin-top: 1em; } }
@@ -1275,7 +1274,8 @@ footer {
 .philios-post {
   color: #FFFFFF; }
   .philios-post .title {
-    margin-bottom: 1.25em; }
+    margin-bottom: 1.25em;
+    position: relative; }
   .philios-post .title h1 {
     font-size: 1.5em;
     font-family: "lyonR";
@@ -1290,20 +1290,22 @@ footer {
   .philios-post .content strong, .philios-post .info strong {
     font-family: "proximaB"; }
   .philios-post .profile {
-    display: inline-block;
-    max-width: 13.5em; }
+    display: inline-block; }
   .philios-post .profile-thumb,
   .philios-post .info {
     display: inline-block; }
   .philios-post .info {
-    line-height: 1.25em; }
+    line-height: 1.25em;
+    margin-left: 3.5em;
+    max-width: 9.5em; }
   .philios-post .profile-thumb {
-    margin-right: 1em; }
+    position: absolute; }
   .philios-post .rating {
-    margin-top: 1.25em;
-    float: right; }
+    top: 3em;
+    right: 0;
+    position: absolute; }
   .philios-post .rating button:first-child {
-    margin-right: 1em; }
+    margin-right: 0.5em; }
   .philios-post .tags {
     margin-top: 1.25em; }
   .philios-post .tags li {
@@ -1315,8 +1317,15 @@ footer {
     .philios-post {
       margin-bottom: 6.25em;
       padding-right: 1.25em; }
+      .philios-post .rating button:first-child {
+        margin-right: 1em; }
       .philios-post .rating {
-        margin-top: 3em; } }
+        margin-top: 3em;
+        position: relative;
+        top: 0; }
+      .philios-post .info {
+        max-width: 15em;
+        margin-left: 5.5em; } }
 
 .add-comment {
   display: inline-block;
