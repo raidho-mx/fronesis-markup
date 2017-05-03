@@ -29,4 +29,4 @@ Listed Events: http://testbed.raidho.mx/fronesis/listed-events.html
 
 Public View Event: http://testbed.raidho.mx/fronesis/public-view-event.html
 
-Create New Event: http://localhost:8888/fronesis/new-event.html
+Create New Event: http://testbed.raidho.mx/fronesis/new-event.html
