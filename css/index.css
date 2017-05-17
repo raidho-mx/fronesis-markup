@@ -2,46 +2,22 @@
 /* STYLE  INDEX */
 /*  Setup  */
 /* S E T U P */
-@font-face {
-  font-family: "lyonL";
-  src: url("../fonts/LyonDisplay-Light.otf");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "lyonR";
-  src: url("../fonts/LyonText-Regular.otf"), url("../fonts/Omnes-Regular.eot") format("embedded-opentype"), url("../fonts/Omnes-Regular.woff") format("woff"), url("../fonts/Omnes-Regular.ttf") format("truetype"), url("../fonts/Omnes-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "proximaB";
-  src: url("../fonts/ProximaNova-Bold.otf"), url("../fonts/Omnes-Semibold.eot") format("embedded-opentype"), url("../fonts/Omnes-Semibold.woff") format("woff"), url("../fonts/Omnes-Semibold.ttf") format("truetype"), url("../fonts/Omnes-Semibold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "proximaL";
-  src: url("../fonts/ProximaNova-Light.otf"), url("../fonts/Omnes-Semibold.eot") format("embedded-opentype"), url("../fonts/Omnes-Semibold.woff") format("woff"), url("../fonts/Omnes-Semibold.ttf") format("truetype"), url("../fonts/Omnes-Semibold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "proximaR";
-  src: url("../fonts/ProximaNova-Regular.otf"), url("../fonts/Omnes-Semibold.eot") format("embedded-opentype"), url("../fonts/Omnes-Semibold.woff") format("woff"), url("../fonts/Omnes-Semibold.ttf") format("truetype"), url("../fonts/Omnes-Semibold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 .t-lyonL {
-  font-family: "lyonL"; }
+  font-family: "Crimson Text", serif; }
 
 .t-lyon {
-  font-family: "lyonR"; }
+  font-family: "Crimson Text", serif; }
 
 .t-proxima {
-  font-family: "proximaR"; }
+  font-family: "Roboto", sans-serif; }
   .t-proxima strong, .t-proxima b {
-    font-family: "proximaB"; }
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
 
 body {
   background: #1F1F20;
   color: #000000;
-  font-family: "proximaR";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: normal; }
   @media (max-width: 800px) {
@@ -95,6 +71,12 @@ h4 {
 
 .t-right {
   text-align: right; }
+
+.right-dir {
+  text-align: left; }
+  @media (min-width: 800px) {
+    .right-dir {
+      text-align: right; } }
 
 .f-right {
   float: right; }
@@ -261,7 +243,8 @@ h4 {
   background: #000000;
   color: #FFFFFF;
   line-height: 2.5em;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   height: 2.635em;
   width: 2.635em; }
 .pager a:hover, .pager .current {
@@ -336,11 +319,12 @@ h4 {
   .listed-elements-x2 li span {
     float: right;
     font-size: 0.875em;
-    font-family: "lyonR"; }
+    font-family: "Crimson Text", serif; }
   .listed-elements-x2 .active {
     color: #000000; }
     .listed-elements-x2 .active p {
-      font-family: "proximaB"; }
+      font-family: "Roboto", sans-serif;
+      font-weight: bold; }
     .listed-elements-x2 .active span {
       color: #000000; }
 
@@ -352,7 +336,7 @@ h4 {
     display: block;
     margin: 1em 0;
     color: #4D4D4D;
-    font-family: "lyonR"; }
+    font-family: "Crimson Text", serif; }
   .listed-elements-x1 li p {
     display: inline-block; }
   .listed-elements-x1 li span {
@@ -361,7 +345,8 @@ h4 {
   .listed-elements-x1 .active {
     color: #000000; }
     .listed-elements-x1 .active p {
-      font-family: "proximaB"; }
+      font-family: "Roboto", sans-serif;
+      font-weight: bold; }
     .listed-elements-x1 .active span {
       color: #000000; }
 
@@ -401,13 +386,17 @@ h4 {
   .heading-separator > div, .heading-separator > h2 {
     display: inline-block; }
 
+.border-bottom-gray {
+  border-bottom: 1px solid #A1A1A1; }
+
 .progress-bar-wrap {
   position: relative; }
   .progress-bar-wrap .title {
     height: 48px;
     position: relative; }
   .progress-bar-wrap .left-txt, .progress-bar-wrap .right-txt {
-    font-family: "proximaB";
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     position: absolute;
     top: 16px;
     z-index: 2; }
@@ -513,6 +502,9 @@ h4 {
 .bg-black {
   background: #000000; }
 
+.c-bright-green {
+  color: #92bc45; }
+
 .bg-aqua {
   background: #03919E; }
 
@@ -580,6 +572,9 @@ section {
     .ptb50 {
       padding: 3.125em 0; } }
 
+.ptb20 {
+  padding: 20px 0; }
+
 .mt40 {
   margin-top: 2em; }
   @media (min-width: 800px) {
@@ -626,6 +621,12 @@ section {
   @media (min-width: 800px) {
     .mtb40 {
       margin: 2.5em 0; } }
+
+.mb60 {
+  margin-bottom: 1.5em; }
+  @media (min-width: 800px) {
+    .mb60 {
+      margin-bottom: 3.75em; } }
 
 .mt20 {
   margin-top: 1.25em; }
@@ -755,7 +756,7 @@ footer {
     color: #BC345B;
     display: inline-block;
     font-size: 1em;
-    font-family: "lyonR"; }
+    font-family: "Crimson Text", serif; }
   @media (min-width: 800px) {
     footer .sitemap {
       margin-bottom: 4em; }
@@ -774,7 +775,7 @@ footer {
   .st-menu a {
     color: #FFFFFF;
     font-size: 1.125em;
-    font-family: "lyonR";
+    font-family: "Crimson Text", serif;
     margin-right: 1.25em; }
   .st-menu a:hover {
     border-bottom: 1px solid #FFFFFF; }
@@ -821,7 +822,7 @@ footer {
   .breadcrumbs a {
     color: #FFFFFF; }
   .breadcrumbs .current {
-    font-family: "proximaB"; }
+    font-family: "Roboto", sans-serif; }
   .breadcrumbs li {
     display: inline-block; }
   .breadcrumbs li:after {
@@ -846,7 +847,7 @@ footer {
   max-width: 56em;
   color: #FFFFFF; }
   .create-post button.add {
-    font-family: "proximaR";
+    font-family: "Roboto", sans-serif;
     font-size: 1em;
     color: #FFFFFF;
     text-align: center; }
@@ -862,7 +863,8 @@ footer {
       color: #FFFFFF;
       background: #3A3A3A;
       padding: 2em 4em;
-      font-family: "proximaB";
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
       font-size: 1em;
       height: 5.5em;
       text-align: center;
@@ -928,7 +930,8 @@ footer {
     border-bottom: 1px solid #959595;
     font-size: 2em;
     color: #D7D7D7;
-    font-family: "proximaB";
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     width: 100%; }
     .create-post.add-url input[type="text"]::-webkit-input-placeholder {
       color: #D7D7D7; }
@@ -963,7 +966,8 @@ footer {
     border-bottom: 1px solid #959595;
     font-size: 1em;
     color: #FFFFFF;
-    font-family: "proximaB";
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     width: 100%; }
     .create-post.url-added input[type="text"]::-webkit-input-placeholder {
       color: #FFFFFF; }
@@ -990,7 +994,8 @@ footer {
       color: #FFFFFF;
       margin-right: 0.5em; }
     .create-post.url-added .post-content span.tag {
-      font-family: "proximaB"; }
+      font-family: "Roboto", sans-serif;
+      font-weight: bold; }
     .create-post.url-added .post-content .tagsinput {
       height: auto; }
     .create-post.url-added .post-content .tagsinput > div {
@@ -998,7 +1003,8 @@ footer {
     .create-post.url-added .post-content .add-tag {
       color: #FFFFFF;
       font-size: 1em;
-      font-family: "proximaB";
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
       width: 100%; }
       .create-post.url-added .post-content .add-tag::-webkit-input-placeholder {
         color: #FFFFFF; }
@@ -1013,7 +1019,8 @@ footer {
     .create-post.url-added .post-content .tags li {
       display: inline-block;
       padding-right: 0.7em;
-      font-family: "proximaB"; }
+      font-family: "Roboto", sans-serif;
+      font-weight: bold; }
   @media (min-width: 800px) {
     .create-post.url-added .three-col {
       padding: 3em 1.25em; }
@@ -1040,11 +1047,11 @@ footer {
   border-bottom: 1px solid #4D4D4D;
   clear: both;
   display: inline-block;
-  font-family: "lyonR";
+  font-family: "Crimson Text", serif;
   margin-bottom: 1.25em;
   width: 100%; }
   .tabs-menu .smaller-txt {
-    font-family: "lyonR";
+    font-family: "Crimson Text", serif;
     font-size: 0.4375em;
     color: #FFFFFF;
     bottom: 0em;
@@ -1172,7 +1179,8 @@ footer {
     vertical-align: top;
     width: 15%; }
   .topic-card strong {
-    font-family: "proximaB"; }
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
   .topic-card .description {
     padding: 1.25em;
     width: 100%; }
@@ -1285,7 +1293,8 @@ footer {
     vertical-align: top;
     width: 15%; }
   .topic-card-x2 strong {
-    font-family: "proximaB"; }
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
   .topic-card-x2 .description {
     padding: 1.25em;
     width: 100%; }
@@ -1293,7 +1302,7 @@ footer {
 .recent-feed {
   color: #FFFFFF; }
   .recent-feed h2 {
-    font-family: "lyonR";
+    font-family: "Crimson Text", serif;
     margin-bottom: 1em; }
 
 .philios-post {
@@ -1303,7 +1312,7 @@ footer {
     position: relative; }
   .philios-post .title h1 {
     font-size: 1.5em;
-    font-family: "lyonR";
+    font-family: "Crimson Text", serif;
     margin-bottom: 0.5em; }
     @media (min-width: 800px) {
       .philios-post .title h1 {
@@ -1313,7 +1322,8 @@ footer {
   .philios-post .content {
     line-height: 1.5em; }
   .philios-post .content strong, .philios-post .info strong {
-    font-family: "proximaB"; }
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
   .philios-post .profile {
     display: inline-block; }
   .philios-post .profile-thumb,
@@ -1337,7 +1347,8 @@ footer {
     display: inline-block; }
   .philios-post .tags a {
     color: #FFFFFF;
-    font-family: "proximaB"; }
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
   @media (min-width: 800px) {
     .philios-post {
       margin-bottom: 6.25em;
@@ -1367,7 +1378,7 @@ footer {
     border-radius: 0.5em;
     display: block;
     color: #FFFFFF;
-    font-family: "proximaR";
+    font-family: "Roboto", sans-serif;
     padding: 1.5em;
     font-size: 1em;
     background: #000000;
@@ -1459,7 +1470,8 @@ footer {
   .booking-nav a {
     color: #4D4D4D; }
   .booking-nav .nav a:hover, .booking-nav .nav li.current a {
-    font-family: "proximaB";
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     border-bottom: 3px solid #4D4D4D;
     padding-bottom: 1.1em; }
   @media (max-width: 800px) {
@@ -1477,6 +1489,7 @@ footer {
   @media (min-width: 800px) {
     .booking-nav {
       border: 1px solid #4D4D4D;
+      height: 62px;
       padding: 1.25em; }
       .booking-nav .nav {
         float: right; }
@@ -1657,7 +1670,8 @@ footer {
 .small-box {
   font-size: 16px;
   width: 100%;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   color: #000000;
   padding: 1em 0;
   border-top: none;
@@ -1670,7 +1684,8 @@ footer {
 .big-box {
   border-bottom: 1px solid #4D4D4D;
   font-size: 2em;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   padding: 11px 0;
   border-top: none;
   border-right: none;
@@ -1682,7 +1697,8 @@ footer {
 .big-input {
   border-bottom: 1px solid #4D4D4D;
   font-size: 2em;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   padding: 11px 0;
   border-top: none;
   border-right: none;
@@ -1921,7 +1937,7 @@ a.ui-datepicker-next.ui-corner-all:after {
 .btn-gray-dark {
   background: #4A4A4A;
   color: #FFFFFF;
-  font-family: "proximaR";
+  font-family: "Roboto", sans-serif;
   padding: 1em 2em;
   font-size: 1.125em;
   max-width: 9em; }
@@ -1932,7 +1948,7 @@ a.ui-datepicker-next.ui-corner-all:after {
 .btn-aqua {
   background: #03919E;
   color: #FFFFFF;
-  font-family: "proximaR";
+  font-family: "Roboto", sans-serif;
   padding: 1em 2em;
   font-size: 1.125em;
   max-width: 9em; }
@@ -1952,7 +1968,7 @@ a.ui-datepicker-next.ui-corner-all:after {
   background: #FFFFFF;
   color: #4D4D4D;
   border: 1px solid #4D4D4D;
-  font-family: "proximaR";
+  font-family: "Roboto", sans-serif;
   padding: 1em 1.5em;
   font-size: 1.125em; }
 
@@ -1960,7 +1976,7 @@ a.ui-datepicker-next.ui-corner-all:after {
   background: #FFFFFF;
   color: #000000;
   border: 1px solid #000000;
-  font-family: "proximaR";
+  font-family: "Roboto", sans-serif;
   padding: 1em 1.5em;
   font-size: 1.125em; }
 
@@ -1969,7 +1985,7 @@ a.ui-datepicker-next.ui-corner-all:after {
   min-width: 14.5em;
   color: #A1A1A1;
   border: 1px solid #A1A1A1;
-  font-family: "proximaR";
+  font-family: "Roboto", sans-serif;
   padding: 1em 1.5em;
   font-size: 1.125em; }
 
@@ -1981,7 +1997,7 @@ a.ui-datepicker-next.ui-corner-all:after {
 .stroke-btn {
   min-width: 14.5em;
   border: 1px solid #000000;
-  font-family: "proximaR";
+  font-family: "Roboto", sans-serif;
   padding: 1em 1.5em;
   font-size: 1.125em; }
 
@@ -2047,7 +2063,8 @@ a.ui-datepicker-next.ui-corner-all:after {
   background-size: auto;
   border: 3px solid #A1A1A1;
   color: #A1A1A1;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   position: relative;
   height: 12.5em;
   margin-bottom: 1em;
@@ -2067,7 +2084,8 @@ a.ui-datepicker-next.ui-corner-all:after {
 
 .social-btn-fb {
   font-size: 16px;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   border: 1px solid #1E2BFF;
   height: 3.375em;
   width: 3.375em;
@@ -2082,7 +2100,8 @@ a.ui-datepicker-next.ui-corner-all:after {
 
 .social-btn-tw {
   font-size: 16px;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   border: 1px solid #1E8BFF;
   height: 3.375em;
   width: 3.375em;
@@ -2097,7 +2116,8 @@ a.ui-datepicker-next.ui-corner-all:after {
 
 .vote-up, .vote-down, .social-btn {
   font-size: 16px;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   background: #D8D8D8;
   height: 3.375em;
   width: 3.375em;
@@ -2142,7 +2162,8 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
   font-size: 16px;
-  font-family: "proximaB"; }
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
 
 .dark-label {
   display: block;
@@ -2151,7 +2172,8 @@ input[type="password"] {
 
 input[type="text"].border-bottom-input {
   font-size: 16px;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-weight: bold;
   padding: 15px 0;
   border-bottom: 1px solid #A1A1A1;
@@ -2168,7 +2190,8 @@ input[type="text"].border-bottom-input {
 textarea.border-box-input {
   color: #000000;
   font-size: 16px;
-  font-family: "proximaB";
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   border: 1px solid #A1A1A1;
   padding: 15px;
   height: 16em;
@@ -2192,7 +2215,8 @@ textarea.border-box-input {
   .calendar-input .time label {
     font-size: 2em;
     padding: 0 0.25em;
-    font-family: "proximaB"; }
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
 
 .search-input {
   position: relative; }
@@ -2226,7 +2250,8 @@ textarea.border-box-input {
     padding: 1em 0;
     border-bottom: 1px solid #4D4D4D; }
     .search-input .active-address p {
-      font-family: "proximaB";
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
@@ -2244,7 +2269,8 @@ textarea.border-box-input {
     height: 3em;
     width: 3em; }
   .search-input .active-user p {
-    font-family: "proximaB";
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     display: inline-block;
     color: #000000;
     font-size: 2em;

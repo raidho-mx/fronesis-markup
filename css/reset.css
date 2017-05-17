@@ -54,7 +54,6 @@ button, select, input[type="submit"] {
 }
 
 *:focus, button, input, select, textarea {
-	font-family: 'proximaR';
 	padding: 0;
 	outline:0;
 	border-radius: 0;
