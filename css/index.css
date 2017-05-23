@@ -1968,6 +1968,17 @@ a.ui-datepicker-next.ui-corner-all:after {
     .btn-aqua {
       padding: 1em 3em; } }
 
+.btn-danger {
+  color: #BC345B;
+  border: 1px solid #BC345B;
+  font-family: "Roboto", sans-serif;
+  padding: 1em 2em;
+  font-size: 1.125em;
+  max-width: 9em; }
+  @media (min-width: 800px) {
+    .btn-danger {
+      padding: 1em 3em; } }
+
 .btn-x1 {
   width: 14.8em;
   max-width: 100%; }
