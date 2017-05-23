@@ -81,142 +81,125 @@
 					<h2 class="t-lyonL c-gray">Session Details</h2>
 				</div>
 				<div class="one-col mb40">
-						<label class="dark-label mb20">SESSION NAME</label>
-						<input type="text" class="border-bottom-input two-col columns" placeholder="Add a name for your">
+					<label class="dark-label mb20">SESSION NAME</label>
+					<input type="text" class="border-bottom-input two-col columns" placeholder="Add a descriptive name for your session">
 				</div>
-				<div class="two-col">
-					<div class="one-col">
-						<label class="dark-label mb20">STARTS</label>
-						<div class="two-col columns mb40">
-							<input type="text" class="border-bottom-input" placeholder="29 / 02 / 2017">
+				<div class="one-col mb40">
+					<div class="two-third">
+						<label class="dark-label mb20">SESSION LENGHT</label>
+						<div class="two-col columns">
+							<input type="text" class="select-gray-border-input" placeholder="0">
+							<div class="suggestion-list suggestion-list-wrap">
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+								</ul>
+							</div>
 						</div>
-						<div class="two-col columns mb40">
-							<input type="text" class="border-bottom-input" placeholder="10:00 AM">
-						</div>
-						<div class="one-col columns mb40">
-							<label class="dark-label mb20">DESCRIPTION</label>
-							<ul class="listed-elements mb40">
-								<li><button><img src="img/icon-bold.png" alt=""></button></li>
-								<li><button><img src="img/icon-italic.png" alt=""></button></li>
-								<li><button><img src="img/icon-underline.png" alt=""></button></li>
-								<li><button><img src="img/icon-attach.png" alt=""></button></li>
-							</ul>
-							<textarea class="border-box-input" placeholder="Add a description for your event"></textarea>
-						</div>
-					</div>
-				</div>
-				<div class="two-col">
-					<div class="one-col">
-						<label class="dark-label mb20">ENDS</label>
-						<div class="two-col columns mb40">
-							<input type="text" class="border-bottom-input" placeholder="29 / 02 / 2017">
-						</div>
-						<div class="two-col columns mb40">
-							<input type="text" class="border-bottom-input" placeholder="10:00 AM">
-						</div>
-						<div class="one-col">
-							<div class="two-col">
-								<label class="dark-label mb20">ENDS</label>
-								<button class="upload-img" name="button"></button>
-								<p class="smaller-txt">Ideal image size is 1280 x 1080, conisder file size should be under 1MB</p>
+						<div class="two-col columns">
+							<input type="text" class="select-gray-border-input" placeholder="0">
+							<div class="suggestion-list show suggestion-list-wrap">
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+								</ul>
 							</div>
 						</div>
 					</div>
+					<div class="one-third columns">
+						<label class="dark-label mb20">SESSION PRICE (IN MXN)</label>
+						<input type="text" class="border-bottom-input two-col columns" placeholder="$100.00">
+					</div>
+				</div>
+				<div class="one-col mb40">
+					<label class="dark-label mb20">DESCRIPTION</label>
+					<input type="text" class="border-bottom-input two-col columns" placeholder="Describe this session type (in less than 80 characters)">
+				</div>
+				<div class="one-col mb40 blue-tags">
+					<label class="dark-label mb20">CATEGORIES</label>
+					<input type="text" class="tags tags_1 border-bottom-input two-col columns">
 				</div>
 			</div>
 		</div>
 	</section>
-
 
 	<section>
 		<div class="wrap">
 			<div class="one-col">
 				<div class="heading-separator mb40">
 					<div class="blue-cir"><div class="txt">2</div></div>
-					<h2 class="t-lyonL c-gray">Event Venue</h2>
+					<h2 class="t-lyonL c-gray">Availability</h2>
 				</div>
-				<div class="one-col mb40">
-					<div class="two-col columns">
-						<label class="dark-label mb20">Venue Name</label>
-						<input type="text" class="border-bottom-input two-col columns" placeholder="Name of the stablishment (if it has one)">
-					</div>
-				</div>
-				<div class="one-col mb40">
-					<div class="two-col columns">
-						<label class="dark-label mb20">ADDRESS (STREET NAME & NUMBER)</label>
-						<input type="text" class="border-bottom-input two-col columns" placeholder="E.g.: Bolivia 203">
-					</div>
-					<div class="two-col columns">
-						<label class="dark-label mb20">NEIGHBORHOOD</label>
-						<input type="text" class="border-bottom-input two-col columns" placeholder="E.g.: Vista Hermosa">
+			</div>
+			<div class="one-col mb40">
+				<div class="one-third columns">
+					<label class="dark-label mb20">ONLINE AVAILABILITY</label>
+					<div class="border-bottom-radio-input">
+						<div class="green-radio-input"><input type="radio" name="character1"><span class="check"></span></div>
+						<p class="c-dark-purple">Face to Face</p>
 					</div>
 				</div>
-				<div class="one-col mb40">
-					<div class="two-col columns">
-						<label class="dark-label mb20">CITY</label>
-						<input type="text" class="border-bottom-input two-col columns" placeholder="E.g.: México">
+				<div class="one-third columns">
+					<label class="dark-label mb20">AVAILABLE AT WHICH VENUES</label>
+					<div class="border-bottom-radio-input">
+						<div class="green-radio-input"><input type="radio" name="character2"><span class="check"></span></div>
+						<p class="c-dark-purple">Venue 1</p>
 					</div>
-					<div class="two-col columns">
-						<label class="dark-label mb20">POSTAL CODE</label>
-						<input type="text" class="border-bottom-input two-col columns" placeholder="E.g.: 64620">
+					<div class="border-bottom-radio-input">
+						<div class="green-radio-input"><input type="radio" name="character2"><span class="check"></span></div>
+						<p class="c-dark-purple">Venue 2</p>
+					</div>
+					<div class="border-bottom-radio-input">
+						<div class="green-radio-input"><input type="radio" name="character2"><span class="check"></span></div>
+						<p class="c-dark-purple">Venue 3</p>
 					</div>
 				</div>
 			</div>
+			<div class="one-col mb40">
+				<div class="one-third columns">
+					<label class="dark-label mb20">GROUPS</label>
+					<div class="border-bottom-radio-input">
+						<div class="green-radio-input"><input type="radio" name="character1"><span class="check"></span></div>
+						<p class="c-dark-purple">One on one sessions</p>
+					</div>
+					<div class="border-bottom-radio-input">
+						<div class="green-radio-input"><input type="radio" name="character1"><span class="check"></span></div>
+						<p class="c-dark-purple">Available for groups</p>
+					</div>
+				</div>
+				<div class="one-third columns disable-events">
+					<label class="dark-label mb20">PRICE PER PERSON (FOR GROUPS)</label>
+					<input type="text" class="border-bottom-input two-col columns" placeholder="$0.00">
+				</div>
+				<div class="one-third columns disable-events">
+					<label class="dark-label mb20">MAX CAPACITY (FOR GROUPS)</label>
+					<input type="text" class="border-bottom-input two-col columns" placeholder="$0.00">
+				</div>
+			</div>
 		</div>
-	</section>
+	</seciton>
 
 	<section>
 		<div class="wrap">
-			<div class="one-col mb40">
-				<div class="heading-separator mb40">
-					<div class="blue-cir"><div class="txt">3</div></div>
-					<h2 class="t-lyonL c-gray">Tickets</h2>
-				</div>
-				<div class="one-col mb40">
-						<div class="col10 columns v-align-b">
-							<button class="p20 c-center"><img src="img/icon-squares.png" alt=""></button>
-						</div>
-						<div class="col40 columns">
-							<label class="dark-label mb20">TICKET NAME</label>
-							<input type="text" class="border-bottom-input two-col columns" placeholder="Name the ticket">
-						</div>
-						<div class="col20 columns">
-							<label class="dark-label mb20">TICKET PRICE</label>
-							<input type="text" class="border-bottom-input two-col columns" placeholder="$0.00">
-						</div>
-						<div class="col20 columns">
-							<label class="dark-label mb20">TICKETS AVAILABLE</label>
-							<input type="text" class="border-bottom-input two-col columns" placeholder="1">
-						</div>
-						<div class="col10 columns v-align-b">
-							<button class="p20 c-center"><img src="img/icon-delete-gray.png" alt=""></button>
-						</div>
-				</div>
-				<div class="one-col prl9 mb40">
-					<div class="one-col mb40">
-						<button class="btn-black btn-img"><img src="img/icon-ticket.png" alt="">Add another ticket</button>
-					</div>
-					<div class="one-col mb40">
-						<label>
-							<div class="aqua-input"><input type="checkbox"><span class="check"></span></div>
-							<p>Show the remaining amount of tickets on your event page</p>
-						</label>
-					</div>
-				</div>
-				<div class="one-col mb40 t-center">
-					<h2 class="t-lyonL c-gray ">Ready to Go!</h2>
-				</div>
-				<div class="one-col gray-border-box t-center mb40">
-					<button class="btn-black btn-x2 mr20" name="button">Save Event, but don’t Publish</button>
-					<button class="btn-aqua btn-x2 mr20" name="button">Publish Your Event</button>
-				</div>
+			<div class="one-col mb40 t-center">
+				<h2 class="t-lyonL c-gray ">Ready to Go!</h2>
+			</div>
+			<div class="one-col gray-border-box t-center mb40">
+				<button class="btn-aqua btn-x2 c-center">Save New Session</button>
 			</div>
 		</div>
 	</section>
 
+
 	<!-- LIBRARIES -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/jquery.tagsinput.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

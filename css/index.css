@@ -191,7 +191,7 @@ h4 {
   top: 8px;
   text-align: center; }
   .blue-cir .txt {
-    top: 10px;
+    top: 9px;
     position: absolute;
     left: 0;
     margin: 0 auto;
@@ -251,6 +251,9 @@ h4 {
   background: #FFFFFF;
   color: #000000; }
 
+.suggestion-list-wrap {
+  max-width: 90%; }
+
 .suggestion-list {
   border: 2px solid #03919E;
   background: #FFFFFF;
@@ -302,7 +305,7 @@ h4 {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   display: inline-block;
-  line-height: 11px;
+  line-height: 19px;
   text-align: center; }
 
 .listed-elements-x2 {
@@ -657,10 +660,12 @@ section {
     padding-right: 1.25em; } }
 
 .one-col {
+  position: relative;
   display: inline-block;
   width: 100%; }
 
 .two-col {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 100%; }
@@ -669,6 +674,7 @@ section {
       width: 49%; } }
 
 .one-third {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 100%; }
@@ -677,6 +683,7 @@ section {
       width: 32%; } }
 
 .two-third {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 100%; }
@@ -685,6 +692,7 @@ section {
       width: 64%; } }
 
 .one-fourth {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 100%; }
@@ -693,6 +701,7 @@ section {
       width: 24%; } }
 
 .three-col {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 100%; }
@@ -1609,6 +1618,7 @@ footer {
     padding: 1em 2.5em;
     left: 0;
     background: #3448BC;
+    min-height: inherit;
     width: 100.2%; }
   .modal-booking .member-profile {
     background: #4D4D4D;
@@ -1804,6 +1814,8 @@ footer {
     max-width: 100%; }
   .event-description .content-txt {
     padding: 0 2em 2em 2em; }
+  .event-description .content-txt img {
+    width: 100%; }
   @media (min-width: 800px) {
     .event-description .featured-img {
       width: 80%; }
@@ -2170,12 +2182,22 @@ input[type="password"] {
   font-weight: bold;
   color: #4D4D4D; }
 
+.border-bottom-input {
+  border-bottom: 1px solid #A1A1A1;
+  padding: 20px 0;
+  width: 100%; }
+
+.border-bottom-radio-input {
+  border-bottom: 1px solid #A1A1A1;
+  padding: 14px 0;
+  width: 100%; }
+
 input[type="text"].border-bottom-input {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-weight: bold;
-  padding: 15px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #A1A1A1;
   width: 100%; }
   input[type="text"].border-bottom-input::-webkit-input-placeholder {
@@ -2343,3 +2365,67 @@ textarea.border-box-input {
     color: #D7D7D7; }
   .select-gray-border-input:-moz-placeholder {
     color: #D7D7D7; }
+
+.green-radio-input {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px; }
+  .green-radio-input input {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #A1A1A1;
+    height: 18px;
+    padding: 0;
+    width: 18px; }
+  .green-radio-input input:checked {
+    background: #FFFFFF; }
+  .green-radio-input input:checked ~ span {
+    opacity: 1;
+    background-color: #03919E;
+    height: 12px;
+    left: 7px;
+    top: 6px;
+    width: 12px; }
+  .green-radio-input .check {
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    background-color: #D8D8D8;
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    height: 12px;
+    left: 7px;
+    top: 6px;
+    width: 12px; }
+
+.green-radio-input + p {
+  display: inline-block; }
+  @media (max-width: 800px) {
+    .green-radio-input + p {
+      max-width: 290px; } }
+
+.blue-tags .tagsinput {
+  border-bottom: 1px solid #A1A1A1;
+  padding: 20px 0;
+  width: 100%; }
+.blue-tags .tagsinput .tag + div {
+  display: inline-block;
+  width: 100px;
+  position: relative; }
+.blue-tags .tagsinput .add-tag {
+  color: #D8D8D8 !important; }
+.blue-tags .tagsinput span.tag {
+  color: #FFFFFF;
+  margin-right: 10px;
+  padding: 8px 10px;
+  background: #3448BC;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+.blue-tags .tagsinput .close-tag {
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 20px; }
