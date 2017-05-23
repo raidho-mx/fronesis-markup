@@ -263,7 +263,8 @@ h4 {
   padding: 1.25em;
   position: absolute;
   visibility: hidden;
-  overflow: auto; }
+  overflow: auto;
+  z-index: 3; }
   .suggestion-list li {
     cursor: pointer;
     display: block;
@@ -363,6 +364,17 @@ h4 {
 .gray-border-box {
   border: 1px solid #979797;
   padding: 2.5em; }
+
+.gray-border-box-x1 {
+  border: 1px solid #979797;
+  padding: 1em; }
+
+.black-border-box-x1 {
+  border: 3px solid #000000;
+  padding: 1em; }
+
+.black-border-box-x1.min-box {
+  min-height: 460px; }
 
 .black-border-box {
   text-align: center;
@@ -648,6 +660,12 @@ section {
 
 .p30 {
   padding: 1.875em; }
+
+.ptbl20 {
+  padding: 20px 0; }
+  @media (min-width: 800px) {
+    .ptbl20 {
+      padding: 20px 20px 0; } }
 
 .pl5 {
   padding-left: 5em; }

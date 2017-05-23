@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" href="css/index.css">
+	<title>FRONESIS | New Session</title>
+</head>
+<body class="bg-white">
+	<header>
+		<div class="wrap">
+			<div class="logo" id="triggerStMenu">
+				<img src="img/f-logo.png" alt="logo">
+			</div>
+			<div class="st-menu">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Philios</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Bookings</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="st-menu hidden-menu">
+		<div class="wrap">
+			<div class="table-cell">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="single-view.html">Philios</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="booking.html">Bookings</a></li>
+				</ul>
+				<p class="smaller-txt mt20 c-light-gray">© Fronesis 2015. All rights reserved.</p>
+			</div>
+			<div class="close-btn smaller-txt c-white" id="closeBtn">Close [x]</div>
+		</div>
+	</div>
+
+	<section class="mt40">
+		<div class="wrap">
+			<div class="booking-nav">
+				<div class="profile">
+					<div class="img" style="background-image: url('img/profile1.png')"></div>
+					<p>Nacho Landa</p>
+				</div>
+				<div class="nav">
+					<ul>
+						<li class="current"><a href="#nav1" class="active">My Services</a></li>
+						<li><a href="#nav1" class="triggerNav">Appointments</a></li>
+						<li><a href="#">Coach Settings</a></li>
+						<li><a href="#">Billing</a></li>
+						<li><a href="#">Events</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="booking-nav-hidden display">
+				<ul>
+					<li class="active"><a href="#">My Events</a></li>
+					<li><a href="#">Events Settings</a></li>
+					<li><a href="#">Create new Event</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap">
+			<h1 class="mb20">Create a New Bundle</h1>
+			<div class="one-col">
+				<div class="heading-separator mb40">
+					<div class="blue-cir"><div class="txt">1</div></div>
+					<h2 class="t-lyonL c-gray">Session Details</h2>
+				</div>
+				<div class="one-col mb40">
+					<div class="two-col columns">
+						<label class="dark-label mb20">BUNDLE NAME OR TITLE</label>
+						<input type="text" class="border-bottom-input two-col columns" placeholder="Add a descriptive name for your bundle">
+					</div>
+					<div class="two-col columns">
+						<label class="dark-label mb20">BUNDLE PRICE (IN MXN)</label>
+						<input type="text" class="border-bottom-input two-col columns" placeholder="$100.00">
+					</div>
+				</div>
+				<div class="one-col mb40">
+					<label class="dark-label mb20">DESCRIPTION</label>
+					<input type="text" class="border-bottom-input two-col columns" placeholder="Describe this session type (in less than 80 characters)">
+				</div>
+				<div class="one-col mb40 blue-tags">
+					<label class="dark-label mb20">CATEGORIES</label>
+					<input type="text" class="tags tags_1 border-bottom-input two-col columns">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap">
+			<div class="one-col">
+				<div class="heading-separator mb40">
+					<div class="blue-cir"><div class="txt">2</div></div>
+					<h2 class="t-lyonL c-gray">Included in this Bundle</h2>
+				</div>
+			</div>
+			<div class="one-col mb40">
+				<div class="two-col columns">
+					<div class="black-border-box-x1 min-box">
+						<h3 class="c-aqua mb20"><strong>Define by number of sessions</strong></h3>
+						<div class="one-col mb20">
+							<label class="dark-label mb20">INCLUDE THE FOLLOWING SESSIONS</label>
+							<div class="one-col">
+								<div class="col10">
+									<input type="text" class="border-bottom-input two-col columns" placeholder="0">
+								</div>
+								<div class="three-col v-align-b">
+									<p class="ptbl20">30 Minute Meeting</p>
+								</div>
+							</div>
+							<div class="one-col">
+								<div class="col10">
+									<input type="text" class="border-bottom-input two-col columns" placeholder="0">
+								</div>
+								<div class="three-col v-align-b">
+									<p class="ptbl20">1 hour Business Meeting</p>
+								</div>
+							</div>
+							<div class="one-col">
+								<div class="col10">
+									<input type="text" class="border-bottom-input two-col columns" placeholder="0">
+								</div>
+								<div class="three-col v-align-b">
+									<p class="ptbl20">Opening Season</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="two-col columns disable-events">
+					<div class="gray-border-box-x1 min-box">
+						<h3 class="c-aqua mb20"><strong>Define by set amount of time</strong></h3>
+						<div class="one-col mb20">
+							<label class="dark-label mb20">INCLUDE THE FOLLOWING SESSIONS</label>
+							<div class="two-col columns">
+								<input type="text" class="select-gray-border-input" placeholder="0">
+							</div>
+							<div class="two-col columns">
+								<input type="text" class="select-gray-border-input" placeholder="minutes">
+								<div class="suggestion-list show suggestion-list-wrap">
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="one-col mb20">
+							<label class="dark-label mb20">DEFINE SESSIONS AVAILABLE</label>
+							<div class="border-bottom-radio-input">
+								<div class="green-radio-input"><input type="radio" name="character2"><span class="check"></span></div>
+								<p class="c-dark-purple">30 Minute Meeting</p>
+							</div>
+							<div class="border-bottom-radio-input">
+								<div class="green-radio-input"><input type="radio" name="character2"><span class="check"></span></div>
+								<p class="c-dark-purple">1 Hour Business Meeting</p>
+							</div>
+							<div class="border-bottom-radio-input">
+								<div class="green-radio-input"><input type="radio" name="character2"><span class="check"></span></div>
+								<p class="c-dark-purple">Opening Season</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap">
+			<div class="one-col">
+				<div class="heading-separator mb40">
+					<div class="blue-cir"><div class="txt">3</div></div>
+					<h2 class="t-lyonL c-gray">Payment & Expiration</h2>
+				</div>
+			</div>
+			<div class="one-col mb40">
+				<div class="one-col mb20">
+					<div class="two-col columns mb40">
+						<label class="dark-label mb20">PAYMENT OPTIONS</label>
+						<div class="border-bottom-radio-input">
+							<div class="green-radio-input"><input type="radio" name="character1"><span class="check"></span></div>
+							<p class="c-dark-purple">Request Upfront Payment</p>
+						</div>
+						<div class="border-bottom-radio-input">
+							<div class="green-radio-input"><input type="radio" name="character1"><span class="check"></span></div>
+							<p class="c-dark-purple">Allow Down Payment</p>
+						</div>
+					</div>
+					<div class="two-col columns mb40 disable-events">
+						<label class="dark-label mb20">DEFINE DOWN PAYMENT AMOUNT (IF REQUESTED)</label>
+						<input type="text" class="border-bottom-input" placeholder="$ 0.00">
+					</div>
+				</div>
+				<div class="one-col mb20">
+					<div class="two-col columns mb40">
+						<label class="dark-label mb20">BUNDLE DURATION</label>
+						<div class="border-bottom-radio-input">
+							<div class="green-radio-input"><input type="radio" name="character2"><span class="check"></span></div>
+							<p class="c-dark-purple">Bundle never expires</p>
+						</div>
+						<div class="border-bottom-radio-input">
+							<div class="green-radio-input"><input type="radio" name="character2"><span class="check"></span></div>
+							<p class="c-dark-purple">Bundle expires</p>
+						</div>
+					</div>
+					<div class="two-col columns mb40 disable-events">
+						<label class="dark-label mb20">EXPIRATION DATE</label>
+						<input type="text" class="border-bottom-input datepicker" placeholder="29 / 02 / 2017">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="wrap">
+			<div class="one-col mb40 t-center">
+				<h2 class="t-lyonL c-gray ">Ready to Go!</h2>
+			</div>
+			<div class="one-col gray-border-box t-center mb40">
+				<button class="btn-aqua btn-x2">Save New Bundle</button>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- LIBRARIES -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/jquery.tagsinput.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
