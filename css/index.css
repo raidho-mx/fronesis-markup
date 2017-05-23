@@ -31,7 +31,7 @@ body {
       font-size: 4em; } }
 
 .smaller-txt {
-  font-size: 0.875em;
+  font-size: 14px;
   line-height: 1.3em; }
 
 strong, bold {
@@ -90,6 +90,9 @@ h4 {
 
 .v-align-b {
   vertical-align: bottom; }
+
+.top {
+  top: 3px !important; }
 
 .align-bottom {
   bottom: 0;
@@ -250,6 +253,14 @@ h4 {
 .pager a:hover, .pager .current {
   background: #FFFFFF;
   color: #000000; }
+
+.pager.border-gray a {
+  border: 1px solid #A1A1A1;
+  background: #FFFFFF;
+  color: #000000; }
+.pager.border-gray a:hover, .pager.border-gray .current {
+  background: #000000;
+  color: #FFFFFF; }
 
 .suggestion-list-wrap {
   max-width: 90%; }
@@ -648,6 +659,9 @@ section {
 
 .mt10 {
   margin-top: 0.7em; }
+
+.mt16 {
+  margin-top: 16px; }
 
 .mb10 {
   margin-bottom: 0.7em; }
