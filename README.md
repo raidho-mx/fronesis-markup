@@ -31,6 +31,8 @@ Listed Events: http://testbed.raidho.mx/fronesis/listed-events.html
 
 Public View Event: http://testbed.raidho.mx/fronesis/public-view-event.html
 
+Public View Event, ticket modal example: http://testbed.raidho.mx/fronesis/ticket-modal-example.html
+
 Create New Event: http://testbed.raidho.mx/fronesis/new-event.html
 
 ### My Services
