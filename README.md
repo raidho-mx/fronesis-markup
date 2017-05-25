@@ -52,3 +52,15 @@ Appointments Client Detail Cards can be find in here: http://testbed.raidho.mx/f
 Appointments, listed clients: http://testbed.raidho.mx/fronesis/appointments-clients.html
 
 Appointments, listed bundles: http://testbed.raidho.mx/fronesis/appointments-bundles.html
+
+### Coach Settings
+
+Coach settings blocked hours: http://testbed.raidho.mx/fronesis/settings-blocked-hours.html
+
+Coach settings, booking settings: http://testbed.raidho.mx/fronesis/settings-booking.html
+
+Coach settings contact details: http://testbed.raidho.mx/fronesis/settings-contact.html
+
+Coach settings add new venue: http://testbed.raidho.mx/fronesis/settings-venue.html
+
+Coach settings edit venues: http://testbed.raidho.mx/fronesis/settings-all-venues.html
