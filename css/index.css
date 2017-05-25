@@ -818,6 +818,13 @@ section {
     .col40 {
       width: 39%; } }
 
+.col14 {
+  display: inline-block;
+  width: 100%; }
+  @media (min-width: 800px) {
+    .col14 {
+      width: 14%; } }
+
 .prl9 {
   padding: 0; }
   @media (min-width: 800px) {
