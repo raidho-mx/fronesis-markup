@@ -128,7 +128,8 @@ h4 {
   overflow: hidden; }
 
 .square-profile-thumb {
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
   .square-profile-thumb .img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,6 +144,20 @@ h4 {
     top: -11px;
     position: relative;
     left: 20px; }
+  .square-profile-thumb .txt-x1 {
+    display: inline-block;
+    top: -10px;
+    position: relative;
+    left: 20px; }
+  @media (max-width: 800px) {
+    .square-profile-thumb .img {
+      height: inherit;
+      padding-bottom: 10%;
+      width: 10%;
+      min-width: 37px;
+      min-height: 37px; }
+    .square-profile-thumb .txt, .square-profile-thumb .txt-x1 {
+      width: 80%; } }
 
 .small-profile-thumb {
   text-align: center;
@@ -547,6 +562,9 @@ h4 {
 
 .c-gray {
   color: #4D4D4D; }
+
+.danger {
+  color: #BC345B; }
 
 .bg-gray {
   background: #4D4D4D; }
