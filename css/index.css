@@ -823,6 +823,9 @@ section {
   width: 100%; }
   @media (min-width: 800px) {
     .col14 {
+      width: 13%; } }
+  @media (min-width: 1500px) {
+    .col14 {
       width: 14%; } }
 
 .prl9 {
