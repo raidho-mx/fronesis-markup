@@ -92,6 +92,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/homepage.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/homepage.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/img\/arrow-down.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -297,6 +306,17 @@
 		"initialSize": 244,
 		"inputAbbreviatedPath": "\/img\/icon-underline.png",
 		"outputAbbreviatedPath": "\/img\/icon-underline.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/log1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 175587,
+		"inputAbbreviatedPath": "\/img\/log1.png",
+		"outputAbbreviatedPath": "\/img\/log1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

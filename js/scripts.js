@@ -26,6 +26,17 @@ $('#triggerStMenu, #closeBtn').click(function(){
 });
 
 
+// SLIDER MENTORS
+$('.mentors-slider').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	centerMode: true,
+	arrows: true,
+	infinite: false,
+	prevArrow: '<span class="slick-prev"></span>',
+	nextArrow: '<span class="slick-next"></span>'
+});
+
 // SLIDER ONE COLUMN
 $('.one-col-slider').slick({
 	slidesToShow: 1,
