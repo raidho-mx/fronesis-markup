@@ -76,3 +76,162 @@ a {
 p {
 	line-height: 24px;
 }
+
+/*RANGE BAR*/
+.amount-input:before{
+	content: '$';
+	display: inline-block;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif
+}
+
+.amount-input:after{
+	content: 'MXN';
+	left: -10px;
+	background-color: white;
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif
+}
+
+.amount-input input,
+.amount-input .ui-slider {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif}
+
+.ui-rangeslider .ui-rangeslider-sliders {
+	position: relative;
+	overflow: visible;
+	margin: 10px 0px;
+	height: 16px;
+}
+
+html >body .ui-rangeslider .ui-rangeslider-sliders .ui-slider-track:first-child {
+	height: 15px;
+	border-width: 1px;
+}
+
+.ui-rangeslider .ui-rangeslider-sliders .ui-slider-track:first-child {
+	background-color: transparent;
+	background: 0;
+	border-width: 0;
+	height: 0;
+}
+
+.ui-rangeslider .ui-rangeslider-sliders .ui-slider-track {
+	position: absolute;
+	top: 6px;
+	right: 0;
+	left: 0;
+	margin: 0;
+}
+
+.ui-rangeslider .ui-rangeslider-sliders .ui-slider-track {
+	position: absolute;
+	top: 6px;
+	right: 0;
+	left: 0;
+	margin: 0;
+}
+
+.ui-slider-track {
+	position: relative;
+	overflow: visible;
+	height: 5px;
+	margin: 0 15px 0 68px;
+	top: 6px;
+	background: #A1A1A1;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-active,
+html .ui-bar-a .ui-btn.ui-btn-active,
+html .ui-body-a .ui-btn.ui-btn-active,
+html body .ui-group-theme-a .ui-btn.ui-btn-active,
+html head+body .ui-btn.ui-btn-a.ui-btn-active,
+.ui-page-theme-a .ui-checkbox-on:after,
+html .ui-bar-a .ui-checkbox-on:after,
+html .ui-body-a .ui-checkbox-on:after,
+html body .ui-group-theme-a .ui-checkbox-on:after,
+.ui-btn.ui-checkbox-on.ui-btn-a:after,
+.ui-page-theme-a .ui-flipswitch-active,
+html .ui-bar-a .ui-flipswitch-active,
+html .ui-body-a .ui-flipswitch-active,
+html body .ui-group-theme-a .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active,
+.ui-page-theme-a .ui-slider-track .ui-btn-active,
+html .ui-bar-a .ui-slider-track .ui-btn-active,
+html .ui-body-a .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-a .ui-btn-active {
+	background-color: #92bc45;
+}
+
+.ui-rangeslider .ui-slider-track:first-child .ui-slider-bg {
+	display: none;
+}
+
+.ui-slider-track .ui-slider-bg {
+	height: 100%;
+}
+
+.ui-slider-track .ui-btn.ui-slider-handle {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 28px;
+	height: 28px;
+	margin: -15px 0 0 -15px;
+	outline: 0;
+	padding: 0;
+}
+
+.ui-slider-track .ui-btn.ui-slider-handle {
+	font-size: .9em;
+	line-height: 30px;
+}
+
+/*.ui-page-theme-a .ui-btn,
+html .ui-bar-a .ui-btn, html
+.ui-body-a .ui-btn, html body
+.ui-group-theme-a .ui-btn,
+html head+body .ui-btn.ui-btn-a,
+.ui-page-theme-a .ui-btn:visited,
+html .ui-bar-a .ui-btn:visited, html
+.ui-body-a .ui-btn:visited, html body
+.ui-group-theme-a .ui-btn:visited,
+html head+body .ui-btn.ui-btn-a:visited {
+	background-color: #f6f6f6;
+	border-color: #ddd;
+	color: #333;
+	text-shadow: 0 1px 0 #f3f3f3;
+}*/
+
+.ui-slider-track .ui-btn.ui-slider-handle {
+	position: absolute;
+	z-index: 1;
+	top: 10px;
+	width: 15px;
+	height: 15px;
+	margin: -15px 0 0 -15px;
+	outline: 0;
+	padding: 0;
+	border-radius: 15px;
+	border: 2px solid #fff;
+	background: #92bc45;
+}
+
+.ui-rangeslider .ui-slider-track:first-child .ui-slider-bg {
+	display: none;
+}
+
+.ui-loader {
+	display: none;
+	z-index: 9999999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border: 0;
+}
