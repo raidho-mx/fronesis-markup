@@ -35,6 +35,9 @@ Public View Event, ticket modal example: http://testbed.raidho.mx/fronesis/ticke
 
 Create New Event: http://testbed.raidho.mx/fronesis/new-event.html
 
+Principal page for events:
+http://testbed.raidho.mx/fronesis/events-home.html
+
 ### My Services
 
 All sessions listed: http://testbed.raidho.mx/fronesis/all-sessions.html
@@ -66,3 +69,17 @@ Coach settings contact details: http://testbed.raidho.mx/fronesis/settings-conta
 Coach settings add new venue: http://testbed.raidho.mx/fronesis/settings-venue.html
 
 Coach settings edit venues: http://testbed.raidho.mx/fronesis/settings-all-venues.html
+
+### Bookings
+
+Principal page for bookings:
+http://testbed.raidho.mx/fronesis/booking-home.html
+
+Coach Profile at booking:
+http://testbed.raidho.mx/fronesis/booking-profile.html
+
+Schedule a booking:
+http://testbed.raidho.mx/fronesis/booking-schedule.html
+
+Payment process at booking:
+http://testbed.raidho.mx/fronesis/booking-payment.html

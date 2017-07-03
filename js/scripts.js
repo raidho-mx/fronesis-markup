@@ -37,6 +37,24 @@ $('.mentors-slider').slick({
 	nextArrow: '<span class="slick-next"></span>'
 });
 
+// SLIDER MENTORS
+$('.events-slider').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	arrows: true,
+	infinite: false,
+	prevArrow: '<span class="slick-prev"></span>',
+	nextArrow: '<span class="slick-next"></span>',
+	responsive: [
+	{
+		breakpoint: 800,
+		settings: {
+		  slidesToShow: 1
+		}
+	}
+	]
+});
+
 // SLIDER ONE COLUMN
 $('.one-col-slider').slick({
 	slidesToShow: 1,
