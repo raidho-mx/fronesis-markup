@@ -83,3 +83,9 @@ http://testbed.raidho.mx/fronesis/booking-schedule.html
 
 Payment process at booking:
 http://testbed.raidho.mx/fronesis/booking-payment.html
+
+Success Message Screen:
+http://testbed.raidho.mx/fronesis/booking-message-screen.html
+
+Confirm Screen:
+http://testbed.raidho.mx/fronesis/booking-confirm-screen.html
