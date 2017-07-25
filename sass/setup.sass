@@ -1,0 +1,787 @@
+/* S E T U P */
+
+// BREAKPOINTS //
+$wide_b: 1920px
+$large_b: 1440px
+$laptop_b: 1280px
+//$random: 1028px
+$tablet_b: 800px
+$phone_b: 600px
+
+
+// COLORS
+$c-white: #FFFFFF
+$c-black: #000000
+$c-gray: #4D4D4D
+$c-dark-gray: #1F1F20
+$c-med-gray: #5B5B5C
+$c-light-gray: #A1A1A1
+$c-lighter-gray: #D8D8D8
+$c-lightest-gray: #f4f4f4
+$c-red-red-wine: #BC345B
+$c-facebook-blue: #1E2BFF
+$c-twitter-blue: #1E8BFF
+$c-red: #D00202
+$c-bright-green: #92bc45
+$c-blue: #1E68FF
+$c-bright-blue: #3448BC
+$c-aqua: #03919E
+
+
+.t-lyonL
+	font-family: 'Crimson Text', serif
+
+.t-lyon
+	font-family: 'Crimson Text', serif
+
+.t-proxima
+	font-family: 'Roboto', sans-serif
+	strong, b
+		font-family: 'Roboto', sans-serif
+		font-weight: bold
+
+
+// GOBLAL TEXT RULES
+body
+	background: $c-dark-gray
+	color: $c-black
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	line-height: normal
+	@media (max-width: $tablet_b)
+		font-size: 14px
+
+// 64px
+=huge-txt
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 4em
+
+.huge-txt
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 4em
+
+.smaller-txt
+	font-size: 14px
+	line-height: 1.3em
+
+strong, bold
+	font-weight: bold
+
+// 48px
+h1
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 3em
+
+// 32px
+h2
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 2em
+
+// 24px
+h3
+	line-height: 1.4em
+	font-size: 1.5em
+
+// 18px
+h4
+	font-size: 1.5em
+	@media (min-width: $tablet_b)
+		font-size: 1.125em
+
+// FLOATS
+.c-center
+	margin: 0 auto
+	display: block
+
+.t-center
+	text-align: center
+
+.block
+	display: block
+
+.t-right
+	text-align: right
+
+.right-dir
+	text-align: left
+	@media (min-width: $tablet_b)
+		text-align: right
+
+.center-dir
+	text-align: left
+	@media (min-width: $tablet_b)
+		text-align: center
+
+.f-right
+	float: right
+
+.f-right-dir
+	float: left
+	@media (min-width: $tablet_b)
+		float: right
+
+.hidden
+	overflow: hidden
+
+.table-desktop
+	@media (min-width: $tablet_b)
+		display: table
+
+.table-cell-desktop
+	@media (min-width: $tablet_b)
+		height: 100%
+		display: table-cell!important
+
+.table-display
+	display: table
+	height: 100vh
+	width: 100%
+
+.table-cell
+	display: table-cell
+	vertical-align: middle
+
+.v-align-b
+	vertical-align: bottom!important
+
+.v-align-t
+	vertical-align: top!important
+
+.absolute-bottom-desktop
+	@media (min-width: $tablet_b)
+		position: absolute
+		bottom: 10px
+
+.absolute
+	@media (min-width: $tablet_b)
+		position: absolute
+
+.align-bottom
+	bottom: 0
+	position: absolute
+	left: 0
+	width: 100%
+
+.align-top
+	top: 0
+	left: 0
+	position: absolute
+	width: 100%
+
+.mask-aqua
+	background: rgba(7, 62, 67, 0.8)
+	top: 0
+	left: 0
+	position: fixed
+	height: 100%
+	width: 100%
+	z-index: 3
+
+.mask-black
+	background: rgba(0, 0, 0, 0.4)
+	top: 0
+	left: 0
+	position: absolute
+	height: 100%
+	width: 100%
+
+.line-clamp-x1
+	display: -webkit-box
+	-webkit-line-clamp: 1
+	-webkit-box-orient: vertical
+	overflow: hidden
+
+// COMBOS
+=bg-img
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+
+=line-clamp-x2
+	display: -webkit-box
+	-webkit-line-clamp: 2
+	-webkit-box-orient: vertical
+	overflow: hidden
+
+=line-clamp-x3
+	display: -webkit-box
+	-webkit-line-clamp: 3
+	-webkit-box-orient: vertical
+	overflow: hidden
+
+=horizontal-center
+	position: absolute
+	left: 0
+	margin: 0 auto
+	right: 0
+
+=placeholder-color($color)
+	&::-webkit-input-placeholder
+		color: $color
+	&::-moz-placeholder
+		color: $color
+	&:-ms-input-placeholder
+		color: $color
+	&:-moz-placeholder
+		color: $color
+
+
+.square-profile-thumb
+	display: inline-block
+	width: 100%
+	.img
+		+bg-img
+		display: inline-block
+		height: 37px
+		width: 37px
+	.txt
+		font-family: 'Crimson Text', serif
+		font-size: 20px
+		display: inline-block
+		top: -11px
+		position: relative
+		left: 20px
+	.txt-x1
+		display: inline-block
+		top: -10px
+		position: relative
+		left: 20px
+	@media (max-width: $tablet_b)
+		.img
+			height: inherit
+			padding-bottom: 10%
+			width: 10%
+			min-width: 37px
+			min-height: 37px
+		.txt, .txt-x1
+			width: 80%
+
+
+// CIRCLES
+.small-profile-thumb-stroke
+	+bg-img
+	+border-radius(3em)
+	border: 3px solid $c-white
+	margin: 0 auto
+	height: 3em
+	width: 3em
+	margin-left: -33px
+
+.small-profile-thumb
+	text-align: center
+	margin-top: 1em
+	.img
+		+bg-img
+		+border-radius(3em)
+		margin: 0 auto
+		height: 3em
+		width: 3em
+	p
+		margin-top: 0.5em
+		text-align: center
+		color: $c-gray
+		font-size: 0.875em
+
+.profile-square
+	.img
+		+bg-img
+		background-color: $c-lighter-gray
+		padding-bottom: 100%
+		position: relative
+		width: 100%
+		@media (max-width: $tablet_b)
+			margin-bottom: 2em
+	.labels
+		text-align: center
+		position: absolute
+		left: 0px
+		bottom: -29px
+		> div
+			border: 1px solid $c-light-gray
+			padding: 5px
+		> div:first-child
+			border-bottom: none
+	.txt
+		padding-top: 40px
+	@media (min-width: $tablet_b)
+		margin-bottom: 20px
+
+.profile-event-thumb
+	+bg-img
+	display: inline-block
+	height: 14em
+	width: 14em
+
+.profile-x1
+	+bg-img
+	display: inline-block
+	height: 3em
+	width: 3em
+
+.profile-thumb
+	+bg-img
+	+border-radius(4.2em)
+	display: inline-block
+	height: 2.5em
+	vertical-align: top
+	width: 2.5em
+	@media (min-width: $tablet_b)
+		height: 4.2em
+		width: 4.2em
+
+.profile-rtxt
+	margin-left: 0.5em
+	display: inline-block
+	@media (min-width: $tablet_b)
+		margin-top: 1em
+
+.event-type-cir
+	border-radius: 2.25em
+	height: 2.5em
+	width: 2.5em
+	color: $c-white
+	line-height: 2.6em
+	font-size: 0.875em
+	text-align: center
+
+.blue-cir
+	color: $c-white
+	+border-radius(100%)
+	background: $c-bright-blue
+	height: 2.25em
+	position: relative
+	width: 2.25em
+	top: 8px
+	text-align: center
+	.txt
+		top: 9px
+		+horizontal-center
+
+// SHORTHANDS
+.video-wrap
+	position: relative
+	padding-bottom: 56.25%
+	padding-top: 0
+	height: 0
+	max-width: 1140px
+	margin: 0 auto
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+.share-block
+	+border-radius(0.5em)
+	border: $c-gray 1px solid
+	overflow: hidden
+	padding: 0.5em
+	position: relative
+	width: 100%
+	&:before
+		color: $c-gray
+		content: 'Share'
+		position: absolute
+		text-align: left
+		top: 1.5em
+	button
+		float: right
+		margin-right: 1em
+
+.pager
+	ul
+		text-align: center
+	li
+		display: inline-block
+		margin-right: 0.5em
+	a
+		+border-radius(3em)
+		display: block
+		background: $c-black
+		color: $c-white
+		line-height: 2.5em
+		font-family: 'Roboto', sans-serif
+		font-weight: bold
+		height: 2.635em
+		width: 2.635em
+	a:hover, .current
+		background: $c-white
+		color: $c-black
+
+.pager.border-gray
+	a
+		border: 1px solid $c-light-gray
+		background: $c-white
+		color: $c-black
+	a:hover, .current
+		background: $c-black
+		color: $c-white
+
+.suggestion-list-wrap
+	max-width: 90%
+
+.suggestion-list
+	border: 2px solid $c-aqua
+	background: $c-white
+	width: 100%
+	height: 10.3em
+	opacity: 0
+	padding: 1.25em
+	position: absolute
+	visibility: hidden
+	overflow: auto
+	z-index: 3
+	li
+		cursor: pointer
+		display: block
+		color: $c-gray
+		padding: 0.75em 0
+
+.suggestion-list.show
+	opacity: 1
+	visibility: visible
+	z-index: 2
+
+.display-inline
+	> li, > div, button
+		vertical-align: top
+		display: inline-block
+
+.display-inline.mrb10
+	> li, > div, > button
+		margin-right: 10px
+		margin-bottom: 10px
+
+.listed-elements
+	> li, > div, > button
+		display: inline-block
+		margin-right: 1em
+	> li img, > div img
+		vertical-align: middle
+
+.listed-elements-bullets
+	li
+		display: inline-block
+		margin-bottom: 0.7em
+	li:before
+		content: '•'
+		font-size: 40px
+		height: 16px
+		width: 16px
+		margin-right: 10px
+		vertical-align: bottom
+		border: 1px solid #979797
+		color: $c-aqua
+		+border-radius(4px)
+		display: inline-block
+		line-height: 19px
+		text-align: center
+
+.listed-elements-x2
+	overflow: auto
+	height: 230px
+	li
+		cursor: pointer
+		display: block
+		margin: 1em 0
+		color: $c-gray
+	li p
+		display: inline-block
+		font-size: 1.5em
+	li span
+		float: right
+		font-size: 0.875em
+		font-family: 'Crimson Text', serif
+	.active
+		color: $c-black
+		p
+			font-family: 'Roboto', sans-serif
+			font-weight: bold
+		span
+			color: $c-black
+
+.listed-elements-x1
+	overflow: auto
+	height: 130px
+	li
+		cursor: pointer
+		display: block
+		margin: 1em 0
+		color: $c-gray
+		font-family: 'Crimson Text', serif
+	li p
+		display: inline-block
+	li span
+		color: $c-aqua
+		margin-left: 1.5em
+	.active
+		color: $c-black
+		p
+			font-family: 'Roboto', sans-serif
+			font-weight: bold
+		span
+			color: $c-black
+
+.disable-events
+	opacity: 0.3
+	pointer-events: none
+
+.alert-notification
+	color: $c-red-red-wine
+
+.gray-border-box
+	border: 1px solid #979797
+	padding: 2.5em
+
+.gray-border-top
+	border-top: 1px solid #979797
+
+.gray-border-bottom
+	border-bottom: 1px solid #979797
+
+.gray-border-box-x1
+	border: 1px solid #979797
+	padding: 1em
+
+.black-border-box-x1
+	border: 3px solid $c-black
+	padding: 1em
+
+.black-border-box-x1.min-box
+	min-height: 460px
+
+.min-box-height
+	min-height: 480px!important
+
+.black-border-box
+	text-align: center
+	border: 2px solid $c-black
+	padding: 2em
+	position: relative
+	.display-inline
+		margin-top: 1.25em
+	@media (min-width: $tablet_b)
+		padding: 2.5em
+		text-align: left
+		.display-inline
+			margin-top: 0
+			position: absolute
+			right: 2em
+			top: 1.5em
+
+.heading-separator
+	padding: 1.25em 0
+	border-bottom: 2px solid  $c-black
+	.blue-cir
+		margin: 0 20px
+	> div, > h2
+		display: inline-block
+
+.table-separator
+	width: 103%
+	vertical-align: middle
+	margin-top: 30px
+	background-color: $c-lightest-gray
+	height: 50px
+	img
+		vertical-align: middle
+		padding: 13px
+	p
+		display: inline-block
+	.day-time
+		background-color: $c-lightest-gray
+		height: 50px
+		margin-top: 20px
+
+.tabs-elements
+	border-bottom: 2px solid $c-black
+	li
+		display: inline-block
+		color: $c-light-gray
+		padding-bottom: 1em
+		padding-right: 1em
+		position: relative
+	.blue-cir
+		margin-right: 1em
+		background: $c-light-gray
+	.blue-cir .txt
+		top: 8px
+	.blue-cir, h1, h2, h3, h4 p
+		display: inline-block
+	li.current
+		color: $c-black
+		.blue-cir
+			background: $c-bright-blue
+	li.current:before
+		content: ''
+		border-bottom: 2px solid $c-light-gray
+		position: absolute
+		bottom: -2px
+		left: 0
+		width: 100%
+	@media (max-width: $tablet_b)
+		border-bottom: none
+		li
+			border-bottom: none
+		li.current:before
+			border-bottom: none
+		li:after
+			content: '>'
+			display: inline-block
+			color: $c-black
+			margin-left: 10px
+		li:last-child:after
+			content: ''
+
+.border-bottom-gray
+	border-bottom: 1px solid $c-light-gray
+
+.border-bottom-black
+	border-bottom: 1px solid $c-black
+
+.progress-bar-wrap
+	position: relative
+	.title
+		height: 48px
+		position: relative
+	.left-txt, .right-txt
+		font-family: 'Roboto', sans-serif
+		font-weight: bold
+		position: absolute
+		top: 16px
+		z-index: 2
+	.right-txt
+		right: 0
+
+.aqua-progress-bar
+	position: relative
+	height: 48px
+	width: 100%
+	background: #D7D7D7
+	span
+		color: $c-white
+		top: 0
+		left: 0
+		height: 48px
+		position: absolute
+		background: $c-aqua
+	.left-txt
+		left: 20px
+	.right-txt
+		right: 20px
+
+.table-border-bottom
+	width: 100%
+	text-align: left
+	tr:nth-child(1)
+		border-bottom: 1px solid #979797
+		color: $c-gray
+		font-weight: bold
+	tr:nth-child(n+2)
+		border-bottom: 1px solid #979797
+		border-left: 1px solid #979797
+		border-right: 1px solid #979797
+	td, th
+		padding: 10px
+		display: inline-block
+		width: 100%
+	@media (min-width: $tablet_b)
+		td, th
+			padding: 15px 20px
+	@media (min-width: $phone_b)
+		td, th
+			display: table-cell
+			width: auto
+
+.content-txt
+	a
+		color: $c-bright-blue
+		font-weight: bold
+		text-decoration: underline
+	p
+		margin-bottom: 1.25em
+		line-height: 1.5em
+	h1
+		margin-bottom: 1em
+	ul
+		padding-left: 30px
+		position: relative
+		margin-bottom: 1.25em
+	ul li
+		line-height: 1.5em
+	ul li:before
+		content: "•"
+		left: 10px
+		position: absolute
+
+.position-modal
+	top: 315px
+	position: absolute!important
+	+horizontal-center
+	z-index: 5
+
+// COLORS
+.c-black
+	color: $c-black
+
+.c-white
+	color: $c-white
+
+.c-fb
+	color: $c-facebook-blue
+
+.c-tw
+	color: $c-twitter-blue
+
+.c-light-gray
+	color: $c-light-gray
+
+.c-gray
+	color: $c-gray
+
+.c-lightest-gray
+	color: $c-lightest-gray
+
+.danger
+	color: $c-red-red-wine
+
+.bg-gray
+	background: $c-gray
+
+.c-aqua
+	color: $c-aqua
+
+.c-bright-blue
+	color: $c-bright-blue!important
+
+.c-bright-green
+	color: $c-bright-green
+
+.bg-white
+	background-color: white
+
+.bg-black
+	background: $c-black
+
+.bg-aqua
+	background: $c-aqua
+
+.bg-grape
+	background: $c-red-red-wine
+
+.bg-bright-blue
+	background-color: $c-bright-blue
+
+.bg-dark-gray
+	background-color: $c-dark-gray
+
+.bg-wine
+	background-color: $c-red-red-wine
+
+.bg-lightest-gray
+	background-color: $c-lightest-gray

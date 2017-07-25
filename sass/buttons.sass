@@ -1,0 +1,444 @@
+// BUTTONS
+.btn-only-txt
+	font-family: 'Roboto', sans-serif
+	padding: 1em 2em
+	font-size: 16px
+	background: $c-white
+
+.btn-txt-gray
+	color: $c-light-gray
+	font-size: 16px
+
+.btn-img img
+	padding-right: 1em
+	vertical-align: middle
+
+.btn-gray-dark
+	background: #4A4A4A
+	color: $c-white
+	font-family: 'Roboto', sans-serif
+	padding: 1em 2em
+	font-size: 1.125em
+	max-width: 9em
+	@media (min-width: $tablet_b)
+		padding: 1em 3em
+
+.btn-aqua
+	background: #03919E
+	color: $c-white
+	font-family: 'Roboto', sans-serif
+	padding: 1em 2em
+	font-size: 1.125em
+	max-width: 9em
+	@media (min-width: $tablet_b)
+		padding: 1em 3em
+
+.btn-danger
+	color: $c-red-red-wine
+	border: 1px solid $c-red-red-wine
+	font-family: 'Roboto', sans-serif
+	padding: 1em 2em
+	font-size: 1.125em
+	max-width: 9em
+	@media (min-width: $tablet_b)
+		padding: 1em 3em
+
+.btn-x1
+	width: 14.8em
+	max-width: 100%
+
+.btn-x2
+	width: 20em
+	max-width: 100%
+
+.btn-gray
+	background: $c-white
+	color: $c-gray
+	border: 1px solid $c-gray
+	font-family: 'Roboto', sans-serif
+	padding: 1em 1.5em
+	font-size: 1.125em
+
+.btn-black
+	background: $c-white
+	color: $c-black
+	border: 1px solid $c-black
+	font-family: 'Roboto', sans-serif
+	padding: 1em 1.5em
+	font-size: 1.125em
+
+.stroke-btn-gray
+	background: $c-white
+	min-width: 14.5em
+	color: $c-light-gray
+	border: 1px solid $c-light-gray
+	font-family: 'Roboto', sans-serif
+	padding: 1em 1.5em
+	font-size: 1.125em
+
+.stroke-btn-gray.enabled
+	background: $c-aqua
+	border: none
+	color: $c-white
+
+.stroke-btn
+	min-width: 14.5em
+	border: 1px solid $c-black
+	font-family: 'Roboto', sans-serif
+	padding: 1em 1.5em
+	font-size: 1.125em
+
+.stroke-btn-4px
+	min-width: 14.5em
+	border: 4px solid $c-white
+	color: $c-white
+	font-family: 'Roboto', sans-serif
+	font-weight: bold
+	padding: 1em 1.5em
+	font-size: 1.125em
+
+.close-btn
+	display: block
+	cursor: pointer
+	position: absolute
+	right: 20px
+	top: 30px
+	z-index: 2
+	> div
+		width: 30px
+		height: 1px
+		background: $c-white
+		width: 100%
+		margin-bottom: 6px
+	> div:nth-child(1)
+		+transform(rotate(45deg))
+	> div:nth-child(2)
+		+transform(rotate(-45deg))
+		position: relative
+		top: -7px
+
+.close-btn-gray
+	border: 1px solid $c-black
+	background: $c-white
+	display: block
+	cursor: pointer
+	position: absolute
+	right: -1px
+	top: -1px
+	z-index: 2
+	width: 36px
+	height: 36px
+	> div
+		width: 23px
+		height: 1px
+		background: #979797
+		margin-bottom: -1px
+	> div:nth-child(1)
+		+transform(rotate(45deg))
+	> div:nth-child(2)
+		+transform(rotate(-45deg))
+		position: relative
+		top: 0
+
+.upload-img
+	+bg-img
+	background-size: auto
+	border: 3px solid $c-light-gray
+	color: $c-light-gray
+	font-family: 'Roboto', sans-serif
+	font-weight: bold
+	position: relative
+	height: 12.5em
+	margin-bottom: 1em
+	width: 238px
+	&:after
+		content:  url('../img/icon-photo.png') "\00000A Upload an image"
+		font-size: 16px
+		white-space: pre
+	p
+		font-weight: bold
+		font-size: 16px
+		top: 5.5em
+		+horizontal-center
+
+
+.social-btn-fb
+	font-size: 16px
+	font-family: 'Roboto', sans-serif
+	font-weight: bold
+	border: 1px solid $c-facebook-blue
+	height: 3.375em
+	width: 3.375em
+	display: inline-block
+	+transition(all ease 0.3s)
+	+border-radius(4em)
+
+.social-btn-tw
+	font-size: 16px
+	font-family: 'Roboto', sans-serif
+	font-weight: bold
+	border: 1px solid $c-twitter-blue
+	height: 3.375em
+	width: 3.375em
+	display: inline-block
+	+transition(all ease 0.3s)
+	+border-radius(4em)
+
+.vote-up, .vote-down, .social-btn
+	font-size: 16px
+	font-family: 'Roboto', sans-serif
+	font-weight: bold
+	background: $c-lighter-gray
+	height: 3.375em
+	width: 3.375em
+	display: inline-block
+	+transition(all ease 0.3s)
+	+border-radius(4em)
+
+.vote-up, .vote-down, .social-btn
+	&:hover
+		+transition(all ease 0.3s)
+		+filter(brightness(120%))
+
+.vote-up
+	color: $c-blue
+	margin-bottom: 0.75em
+	&:before
+		+appearance(none)
+		content: url('../img/arrow-up.svg')
+		display: block
+
+.vote-down
+	color: $c-red
+	&:before
+		+appearance(none)
+		content: url('../img/arrow-down.svg')
+		display: block
+
+// CONTACT FORMS, ETC..
+textarea,
+select,
+input,
+input[type="text"],
+input[type="email"],
+input[type="password"]
+	font-size: 16px
+	font-family: 'Roboto', sans-serif
+	font-weight: bold
+
+.dark-label
+	display: block
+	font-weight: bold
+	color: $c-gray
+
+.border-bottom-input
+	border-bottom: 1px solid $c-light-gray
+	padding: 20px 0
+	width: 100%
+
+.border-bottom-radio-input
+	border-bottom: 1px solid $c-light-gray
+	padding: 14px 0
+	width: 100%
+
+input[type="text"].border-bottom-input,
+input[type="password"].border-bottom-input
+	font-size: 16px
+	font-family: 'Roboto', sans-serif
+	font-weight: bold
+	font-weight: bold
+	padding: 20px 0
+	border-bottom: 1px solid $c-light-gray
+	+placeholder-color($c-lighter-gray)
+	width: 100%
+
+textarea.border-box-input
+	color: $c-black
+	font-size: 16px
+	font-family: 'Roboto', sans-serif
+	font-weight: bold
+	border: 1px solid $c-light-gray
+	padding: 15px
+	height: 16em
+	width: 100%
+	+placeholder-color($c-lighter-gray)
+
+.calendar-input
+	position: relative
+	input[type="search"]
+		background: url('../img/calendar.png') no-repeat right
+	.time input[type="text"]
+		max-width: 1.6em
+		display: inline-block
+	.time label
+		font-size: 2em
+		padding: 0 0.25em
+		font-family: 'Roboto', sans-serif
+		font-weight: bold
+
+.search-input
+	position: relative
+	input[type="search"]
+		background: url('../img/search.png') no-repeat right
+	.close-btn-search
+		cursor: pointer
+		position: absolute
+		z-index: 2
+		right: 0
+		top: 14px
+		width: 36px
+		height: 36px
+		> div
+			width: 23px
+			height: 1px
+			background: #979797
+			position: absolute
+			top: 10px
+		> div:nth-child(1)
+			+transform(rotate(45deg))
+		> div:nth-child(2)
+			+transform(rotate(-45deg))
+	.active-address
+		padding: 1em 0
+		border-bottom: 1px solid $c-gray
+		p
+			font-family: 'Roboto', sans-serif
+			font-weight: bold
+			display: -webkit-box
+			-webkit-line-clamp: 1
+			-webkit-box-orient: vertical
+			overflow: hidden
+			max-width: 420px
+	.active-user
+		.img
+			+bg-img
+			+border-radius(3em)
+			display: inline-block
+			margin: 0 auto
+			height: 3em
+			width: 3em
+		p
+			font-family: 'Roboto', sans-serif
+			font-weight: bold
+			display: inline-block
+			color: $c-black
+			font-size: 2em
+			margin-top: -1.1em
+			margin-left: 0.5em
+			vertical-align: middle
+
+.aqua-input
+	display: inline-block
+	height: 17px
+	margin-right: 6px
+	position: relative
+	top: -6px
+	width: 17px
+	input[type="checkbox"]
+		+border-radius(4px)
+		border: 1px solid #979797
+		height: 17px
+		width: 17px
+	input[type="checkbox"]:checked ~ span
+		opacity: 1
+	.check
+		+border-radius(11px)
+		background-color: $c-aqua
+		display: block
+		height: 11px
+		left: 6px
+		opacity: 0
+		position: absolute
+		pointer-events: none
+		top: 6px
+		width: 11px
+	@media (min-width: $tablet_b)
+		top: 6px
+
+.aqua-input + p
+	display: inline-block
+	@media (max-width: $tablet_b)
+		max-width: 290px
+
+.url-input
+	border-bottom: 1px solid $c-bright-blue
+	color: $c-bright-blue
+	font-weight: bold
+	padding: 15px 0
+
+.select-gray-border-wrap
+	display: inline-block
+	max-width: 9.3em
+	position: relative
+	.suggestion-list
+		text-align: center
+
+.select-gray-border-input
+	border: 1px solid $c-light-gray
+	padding: 20px
+	background: url('../img/down-select.png') no-repeat 90%
+	width: 100%
+	+placeholder-color(#D7D7D7)
+
+.green-radio-input
+	cursor: pointer
+	display: inline-block
+	margin-right: 6px
+	position: relative
+	top: 7px
+	input
+		+border-radius(3px)
+		border: 1px solid $c-light-gray
+		height: 18px
+		padding: 0
+		margin: 0
+		width: 18px
+	input:checked
+		background: $c-white
+	input:checked ~ span
+		opacity: 1
+		background-color: $c-aqua
+		height: 12px
+		left: 3px
+		top: 3px
+		width: 12px
+	.check
+		+border-radius(11px)
+		background-color: $c-lighter-gray
+		display: block
+		pointer-events: none
+		position: absolute
+		height: 12px
+		left: 3px
+		top: 3px
+		width: 12px
+
+.green-radio-input + p
+	display: inline-block
+	position: relative
+	top: 3px
+	@media (max-width: $tablet_b)
+		max-width: 290px
+
+.blue-tags
+	.tagsinput
+		border-bottom: 1px solid $c-light-gray
+		padding: 20px 0
+		width: 100%
+	.tagsinput .tag + div
+		display: inline-block
+		width: 100px
+		position: relative
+	.tagsinput .add-tag
+		color: $c-lighter-gray!important
+	.tagsinput span.tag
+		color: $c-white
+		margin-right: 10px
+		padding: 8px 10px
+		background: $c-bright-blue
+		font-family: 'Roboto', sans-serif
+		font-weight: bold
+	.tagsinput .close-tag
+		color: $c-white
+		font-weight: 100
+		font-size: 20px

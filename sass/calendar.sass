@@ -1,0 +1,81 @@
+/*CALENDAR*/
+div#ui-datepicker-div
+	padding: 30px
+	border: 2px solid #03919E
+	color: #6B7897
+	font-size: 15px
+	display: none
+	background: white
+
+div#ui-datepicker-div a
+	color: #6B7897
+
+a.ui-state-default
+	padding: 10px
+	display: block
+	text-align: center
+
+a.ui-state-default.ui-state-active
+	background: #03919E
+	color: white!important
+	border-radius: 30px
+	width: 38px
+	height: 38px
+	line-height: 20px
+	font-size: 14px
+
+td.ui-datepicker-current-day
+	color: white
+
+a.ui-datepicker-prev.ui-corner-all,
+a.ui-datepicker-next.ui-corner-all
+	color: rgba(0,0,0,0)!important
+
+.ui-datepicker-calendar thead
+	opacity: 0.5
+
+.ui-datepicker-prev.ui-corner-all span a
+	width: 20px
+	height: 20px
+	background: red
+	border-radius: 20px
+
+a.ui-datepicker-next.ui-corner-all, a.ui-datepicker-prev.ui-corner-all
+	background: #F7F8FC
+	height: 20px
+	width: 20px
+	border-radius: 30px
+	display: block
+	position: absolute
+	right: 40px
+
+a.ui-datepicker-prev.ui-corner-all
+	right: 70px
+
+a.ui-datepicker-prev.ui-corner-all:after
+	content: ''
+	border-top: 2px solid #8C96AB
+	border-left: 2px solid #8C96AB
+	position: absolute
+	z-index: 9
+	width: 6px
+	height: 6px
+	transform: rotate(-40deg)
+	top: 6px
+	left: 7px
+
+a.ui-datepicker-next.ui-corner-all:after
+	content: ''
+	border-top: 2px solid #8C96AB
+	border-left: 2px solid #8C96AB
+	position: absolute
+	z-index: 9
+	width: 6px
+	height: 6px
+	transform: rotate(130deg)
+	top: 6px
+	left: 5px
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all
+	margin-bottom: 30px
+	padding: 0 10px
