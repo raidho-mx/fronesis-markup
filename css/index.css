@@ -49,6 +49,20 @@ h2 {
     h2 {
       font-size: 2em; } }
 
+.txt36 {
+  font-size: 18px; }
+  @media (min-width: 800px) {
+    .txt36 {
+      font-size: 36px;
+      line-height: 42px; } }
+
+.txt20 {
+  font-size: 18px; }
+  @media (min-width: 800px) {
+    .txt20 {
+      font-size: 20px;
+      line-height: 26px; } }
+
 h3 {
   line-height: 1.4em;
   font-size: 1.5em; }
@@ -163,6 +177,10 @@ h4 {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden; }
+
+.link-style a {
+  color: #000000 !important;
+  text-decoration: underline; }
 
 .square-profile-thumb {
   display: inline-block;
@@ -678,6 +696,8 @@ h4 {
   content: "•";
   left: 10px;
   position: absolute; }
+.content-txt img {
+  max-width: 100%; }
 
 .position-modal {
   top: 315px;

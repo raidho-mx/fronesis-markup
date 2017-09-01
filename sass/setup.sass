@@ -81,6 +81,18 @@ h2
 	@media (min-width: $tablet_b)
 		font-size: 2em
 
+.txt36
+	font-size: 18px
+	@media (min-width: $tablet_b)
+		font-size: 36px
+		line-height: 42px
+
+.txt20
+	font-size: 18px
+	@media (min-width: $tablet_b)
+		font-size: 20px
+		line-height: 26px
+
 // 24px
 h3
 	line-height: 1.4em
@@ -194,6 +206,11 @@ h4
 	-webkit-line-clamp: 1
 	-webkit-box-orient: vertical
 	overflow: hidden
+
+.link-style
+	a
+		color: $c-black!important
+		text-decoration: underline
 
 // COMBOS
 =bg-img
@@ -718,6 +735,9 @@ h4
 		content: "•"
 		left: 10px
 		position: absolute
+	img
+		max-width: 100%
+
 
 .position-modal
 	top: 315px
