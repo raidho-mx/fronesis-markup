@@ -13,13 +13,25 @@ Cosmetic | :lipstick: `:lipstick:`
 Adjustment | :wrench: `:wrench:`
 Tests | :rotating_light: `:rotating_light:`
 
-## Maquetas:
+## Website Público
 
-Home Philios: http://testbed.raidho.mx/fronesis/
+Homepage Fronesis: http://testbed.raidho.mx/fronesis/homepage.html
 
-Single view: http://testbed.raidho.mx/fronesis/single-view.html
+About Fronesis: http://testbed.raidho.mx/fronesis/about.html
 
-Dashboard (home): http://testbed.raidho.mx/fronesis/booking.html
+Event homepage: http://testbed.raidho.mx/fronesis/events-home.html
+
+Event single view: http://testbed.raidho.mx/fronesis/public-view-event.html
+
+Event single view ticket modal example: http://testbed.raidho.mx/fronesis/ticket-modal-example.html
+
+Philios homepage: http://testbed.raidho.mx/fronesis/
+
+Philios single view: http://testbed.raidho.mx/fronesis/single-view.html
+
+## Dashboard:
+
+User Dashboard homepage: http://testbed.raidho.mx/fronesis/booking.html
 
 Cards (book a meeting): http://testbed.raidho.mx/fronesis/modals/client.html
 
@@ -29,14 +41,7 @@ All Events: http://testbed.raidho.mx/fronesis/all-events.html
 
 Listed Events: http://testbed.raidho.mx/fronesis/listed-events.html
 
-Public View Event: http://testbed.raidho.mx/fronesis/public-view-event.html
-
-Public View Event, ticket modal example: http://testbed.raidho.mx/fronesis/ticket-modal-example.html
-
 Create New Event: http://testbed.raidho.mx/fronesis/new-event.html
-
-Principal page for events:
-http://testbed.raidho.mx/fronesis/events-home.html
 
 ### My Services
 
@@ -72,20 +77,14 @@ Coach settings edit venues: http://testbed.raidho.mx/fronesis/settings-all-venue
 
 ### Bookings
 
-Principal page for bookings:
-http://testbed.raidho.mx/fronesis/booking-home.html
+Principal page for bookings: http://testbed.raidho.mx/fronesis/booking-home.html
 
-Coach Profile at booking:
-http://testbed.raidho.mx/fronesis/booking-profile.html
+Coach Profile at booking: http://testbed.raidho.mx/fronesis/booking-profile.html
 
-Schedule a booking:
-http://testbed.raidho.mx/fronesis/booking-schedule.html
+Schedule a booking: http://testbed.raidho.mx/fronesis/booking-schedule.html
 
-Payment process at booking:
-http://testbed.raidho.mx/fronesis/booking-payment.html
+Payment process at booking: http://testbed.raidho.mx/fronesis/booking-payment.html
 
-Success Message Screen:
-http://testbed.raidho.mx/fronesis/booking-message-screen.html
+Success Message Screen: http://testbed.raidho.mx/fronesis/booking-message-screen.html
 
-Confirm Screen:
-http://testbed.raidho.mx/fronesis/booking-confirm-screen.html
+Confirm Screen: http://testbed.raidho.mx/fronesis/booking-confirm-screen.html
