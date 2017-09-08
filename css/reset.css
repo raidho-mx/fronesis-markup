@@ -235,3 +235,8 @@ html head+body .ui-btn.ui-btn-a:visited {
 	left: 50%;
 	border: 0;
 }
+
+.search-input input[type="search"]:focus,
+.search-input input[type="search"]:hover {
+	background-image: none;
+}
